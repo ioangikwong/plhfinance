@@ -97,17 +97,12 @@ export default function Header() {
 
             {/* Mobile Menu Toggle Button */}
             <button
-              className="md:hidden flex items-center justify-center p-2 -mr-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors z-[100] relative"
-              onClick={() => {
-                setIsMobileMenuOpen(!isMobileMenuOpen);
-                if (isMobileMenuOpen) {
-                  setTimeout(() => setIsServicesMenuOpen(false), 300);
-                }
-              }}
-              aria-label="Basculer le menu"
+              className="md:hidden flex items-center justify-center p-2 -mr-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors z-50 relative"
+              onClick={() => setIsMobileMenuOpen(true)}
+              aria-label="Ouvrir le menu"
             >
               <span className="material-symbols-outlined text-[28px] text-[#0e161a] dark:text-white">
-                {isMobileMenuOpen ? 'close' : 'menu'}
+                menu
               </span>
             </button>
           </div>
@@ -116,34 +111,49 @@ export default function Header() {
 
       {/* Full-screen Mobile Menu (Apple-like) */}
       <div
-        className={`fixed inset-0 bg-white/95 dark:bg-background-dark/95 backdrop-blur-xl z-[90] md:hidden transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] flex flex-col pt-32 px-8 overflow-y-auto pb-10 ${isMobileMenuOpen
+        className={`fixed inset-0 bg-white/95 dark:bg-background-dark/95 backdrop-blur-3xl z-[150] md:hidden transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] flex flex-col pt-24 px-8 overflow-y-auto pb-10 ${isMobileMenuOpen
           ? "opacity-100 pointer-events-auto translate-y-0"
           : "opacity-0 pointer-events-none -translate-y-4"
           }`}
       >
-        <div className="flex flex-col gap-8 max-w-sm mx-auto w-full text-center relative min-h-[450px]">
+        {/* Dedicated Close Button inside the Overlay */}
+        <div className="absolute top-6 right-6 flex">
+          <button
+            className="p-2 rounded-full bg-slate-100 dark:bg-slate-800 text-[#0e161a] dark:text-white hover:bg-slate-200 transition-colors"
+            onClick={() => {
+              setIsMobileMenuOpen(false);
+              setTimeout(() => setIsServicesMenuOpen(false), 300);
+            }}
+            aria-label="Fermer le menu"
+          >
+            <span className="material-symbols-outlined text-[28px]">close</span>
+          </button>
+        </div>
+
+        <div className="flex flex-col gap-8 max-w-sm mx-auto w-full text-center relative min-h-[500px] mt-10">
 
           {/* Main Mobile Menu Level */}
-          <div className={`absolute top-0 left-0 w-full flex flex-col gap-8 transition-transform duration-300 ${isServicesMenuOpen ? '-translate-x-[120%] opacity-0 pointer-events-none' : 'translate-x-0 opacity-100'}`}>
-            <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="text-3xl font-black text-[#0e161a] dark:text-white border-b border-gray-100 dark:border-gray-800 pb-4">
+          <div className={`absolute top-0 left-0 w-full flex flex-col gap-10 transition-transform duration-300 ${isServicesMenuOpen ? '-translate-x-[120%] opacity-0 pointer-events-none' : 'translate-x-0 opacity-100'}`}>
+            <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="text-3xl font-black text-[#0e161a] dark:text-white transition-colors hover:text-primary">
               Accueil
             </Link>
 
             <button
               onClick={() => setIsServicesMenuOpen(true)}
-              className="text-3xl font-black text-[#0e161a] dark:text-white flex items-center justify-center gap-2 group"
+              className="text-3xl font-black text-[#0e161a] dark:text-white transition-colors hover:text-primary"
             >
               Services
-              <span className="material-symbols-outlined text-[32px] mt-0.5 text-primary transition-transform group-hover:translate-x-1">chevron_right</span>
             </button>
 
-            <Link href="/planificateur-financier" onClick={() => setIsMobileMenuOpen(false)} className="text-3xl font-black text-[#0e161a] dark:text-white border-t border-gray-100 dark:border-gray-800 pt-8 mt-4">
+            <Link href="/planificateur-financier" onClick={() => setIsMobileMenuOpen(false)} className="text-3xl font-black text-[#0e161a] dark:text-white transition-colors hover:text-primary">
               Mon expertise
             </Link>
-            <Link href="/blogue" onClick={() => setIsMobileMenuOpen(false)} className="text-3xl font-black text-[#0e161a] dark:text-white">
+
+            <Link href="/blogue" onClick={() => setIsMobileMenuOpen(false)} className="text-3xl font-black text-[#0e161a] dark:text-white transition-colors hover:text-primary">
               Blogue
             </Link>
-            <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)} className="text-3xl font-black text-primary">
+
+            <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)} className="text-3xl font-black text-primary transition-colors hover:text-primary/80">
               Contact
             </Link>
 
@@ -158,29 +168,28 @@ export default function Header() {
           </div>
 
           {/* Sub Menu Level (Services) */}
-          <div className={`absolute top-0 left-0 w-full flex flex-col gap-6 transition-transform duration-300 ${isServicesMenuOpen ? 'translate-x-0 opacity-100' : 'translate-x-[120%] opacity-0 pointer-events-none'}`}>
+          <div className={`absolute top-0 left-0 w-full flex flex-col gap-10 transition-transform duration-300 ${isServicesMenuOpen ? 'translate-x-0 opacity-100' : 'translate-x-[120%] opacity-0 pointer-events-none'}`}>
             <button
               onClick={() => setIsServicesMenuOpen(false)}
-              className="text-[#517994] dark:text-gray-400 flex items-center gap-2 text-sm font-bold uppercase tracking-widest border-b border-gray-100 dark:border-gray-800 pb-4 mb-2 justify-center group"
+              className="text-[#517994] dark:text-gray-400 flex items-center justify-center gap-2 text-sm font-bold uppercase tracking-widest group"
             >
               <span className="material-symbols-outlined text-[20px] transition-transform group-hover:-translate-x-1">arrow_back</span>
               Retour
             </button>
-            <span className="text-2xl font-black mb-4 text-[#0e161a] dark:text-white">Services financiers</span>
 
-            <Link href="/entrepreneur-travailleur-autonome" onClick={() => setIsMobileMenuOpen(false)} className="text-xl font-bold text-[#0e161a] dark:text-white hover:text-primary transition-colors">
+            <Link href="/entrepreneur-travailleur-autonome" onClick={() => { setIsMobileMenuOpen(false); setTimeout(() => setIsServicesMenuOpen(false), 300); }} className="text-2xl font-bold text-[#0e161a] dark:text-white hover:text-primary transition-colors">
               Entrepreneur
             </Link>
-            <Link href="/gestion-de-patrimoine" onClick={() => setIsMobileMenuOpen(false)} className="text-xl font-bold text-[#0e161a] dark:text-white hover:text-primary transition-colors">
+            <Link href="/gestion-de-patrimoine" onClick={() => { setIsMobileMenuOpen(false); setTimeout(() => setIsServicesMenuOpen(false), 300); }} className="text-2xl font-bold text-[#0e161a] dark:text-white hover:text-primary transition-colors">
               Gestion de patrimoine
             </Link>
-            <Link href="/parents-travailleurs" onClick={() => setIsMobileMenuOpen(false)} className="text-xl font-bold text-[#0e161a] dark:text-white hover:text-primary transition-colors">
+            <Link href="/parents-travailleurs" onClick={() => { setIsMobileMenuOpen(false); setTimeout(() => setIsServicesMenuOpen(false), 300); }} className="text-2xl font-bold text-[#0e161a] dark:text-white hover:text-primary transition-colors">
               Parents travailleurs
             </Link>
-            <Link href="/proches-aidants" onClick={() => setIsMobileMenuOpen(false)} className="text-xl font-bold text-[#0e161a] dark:text-white hover:text-primary transition-colors">
+            <Link href="/proches-aidants" onClick={() => { setIsMobileMenuOpen(false); setTimeout(() => setIsServicesMenuOpen(false), 300); }} className="text-2xl font-bold text-[#0e161a] dark:text-white hover:text-primary transition-colors">
               Proches aidants
             </Link>
-            <Link href="/travailleur-preoccupe-par-la-retraite" onClick={() => setIsMobileMenuOpen(false)} className="text-xl font-bold text-[#0e161a] dark:text-white hover:text-primary transition-colors">
+            <Link href="/travailleur-preoccupe-par-la-retraite" onClick={() => { setIsMobileMenuOpen(false); setTimeout(() => setIsServicesMenuOpen(false), 300); }} className="text-2xl font-bold text-[#0e161a] dark:text-white hover:text-primary transition-colors">
               Retraite
             </Link>
           </div>
