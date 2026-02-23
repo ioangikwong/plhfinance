@@ -33,7 +33,7 @@ export default function Header() {
           <Link href="/" className="flex items-center gap-3">
             <div className="flex items-center">
               <img
-                src="/logo.jpg"
+                src="/logo.png"
                 alt="Logo PLH Finance"
                 className="h-10 w-auto object-contain"
               />
