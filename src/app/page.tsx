@@ -61,9 +61,7 @@ export default function Page() {
                     {/* The standard video without parallax, no overlay, 16:9 frame */}
                     <div className="relative w-full max-w-5xl md:max-w-4xl lg:max-w-5xl aspect-video rounded-[2rem] overflow-hidden shadow-2xl bg-black">
                         <video
-                            autoPlay
-                            loop
-                            muted
+                            controls
                             playsInline
                             className="w-full h-full object-cover"
                         >
