@@ -1,6 +1,20 @@
+"use client";
+
+import { useState, useEffect } from "react";
 import Link from "next/link";
 
 export default function Header() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+    return () => { document.body.style.overflow = "unset" };
+  }, [isMobileMenuOpen]);
+
   return (
     <header className="sticky top-0 z-50 w-full flex flex-col">
       {/* Top bar Announcement */}
@@ -79,6 +93,69 @@ export default function Header() {
             <Link href="/contact" className="hidden sm:flex min-w-[140px] cursor-pointer items-center justify-center rounded-lg h-11 px-5 bg-primary text-white text-sm font-bold tracking-wide hover:bg-primary/90 transition-all">
               Prendre Rendez-vous
             </Link>
+
+            {/* Mobile Menu Toggle Button */}
+            <button
+              className="md:hidden flex items-center justify-center p-2 -mr-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors z-[100] relative"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-label="Basculer le menu"
+            >
+              <span className="material-symbols-outlined text-[28px] text-[#0e161a] dark:text-white">
+                {isMobileMenuOpen ? 'close' : 'menu'}
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Full-screen Mobile Menu (Apple-like) */}
+      <div
+        className={`fixed inset-0 bg-white/95 dark:bg-background-dark/95 backdrop-blur-xl z-[90] md:hidden transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] flex flex-col pt-32 px-8 overflow-y-auto pb-10 ${isMobileMenuOpen
+          ? "opacity-100 pointer-events-auto translate-y-0"
+          : "opacity-0 pointer-events-none -translate-y-4"
+          }`}
+      >
+        <div className="flex flex-col gap-8 max-w-sm mx-auto w-full text-center">
+          <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="text-3xl font-black text-[#0e161a] dark:text-white border-b border-gray-100 dark:border-gray-800 pb-4">
+            Accueil
+          </Link>
+
+          <div className="flex flex-col gap-4">
+            <span className="text-xs font-bold uppercase tracking-widest text-[#517994] dark:text-gray-400">Services</span>
+            <Link href="/entrepreneur-travailleur-autonome" onClick={() => setIsMobileMenuOpen(false)} className="text-xl font-bold text-[#0e161a] dark:text-white hover:text-primary transition-colors">
+              Entrepreneur
+            </Link>
+            <Link href="/gestion-de-patrimoine" onClick={() => setIsMobileMenuOpen(false)} className="text-xl font-bold text-[#0e161a] dark:text-white hover:text-primary transition-colors">
+              Gestion de patrimoine
+            </Link>
+            <Link href="/parents-travailleurs" onClick={() => setIsMobileMenuOpen(false)} className="text-xl font-bold text-[#0e161a] dark:text-white hover:text-primary transition-colors">
+              Parents travailleurs
+            </Link>
+            <Link href="/proches-aidants" onClick={() => setIsMobileMenuOpen(false)} className="text-xl font-bold text-[#0e161a] dark:text-white hover:text-primary transition-colors">
+              Proches aidants
+            </Link>
+            <Link href="/travailleur-preoccupe-par-la-retraite" onClick={() => setIsMobileMenuOpen(false)} className="text-xl font-bold text-[#0e161a] dark:text-white hover:text-primary transition-colors">
+              Retraite
+            </Link>
+          </div>
+
+          <Link href="/planificateur-financier" onClick={() => setIsMobileMenuOpen(false)} className="text-3xl font-black text-[#0e161a] dark:text-white border-t border-gray-100 dark:border-gray-800 pt-8 mt-4">
+            Mon expertise
+          </Link>
+          <Link href="/blogue" onClick={() => setIsMobileMenuOpen(false)} className="text-3xl font-black text-[#0e161a] dark:text-white">
+            Blogue
+          </Link>
+          <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)} className="text-3xl font-black text-primary">
+            Contact
+          </Link>
+
+          <div className="mt-8 flex gap-4 justify-center">
+            <a href="tel:4505210804" className="flex items-center justify-center size-14 rounded-full bg-slate-100 dark:bg-slate-800 text-[#0e161a] dark:text-white hover:-translate-y-1 transition-transform">
+              <span className="material-symbols-outlined">call</span>
+            </a>
+            <a href="mailto:info@plhfinance.com" className="flex items-center justify-center size-14 rounded-full bg-slate-100 dark:bg-slate-800 text-[#0e161a] dark:text-white hover:-translate-y-1 transition-transform">
+              <span className="material-symbols-outlined">mail</span>
+            </a>
           </div>
         </div>
       </div>
