@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PLH Finance - Le côté humain de la finance</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#19669a",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#121a20",
+                        "soft-gray": "#F8FAFC",
+                        "trust-blue": "#196598"
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#0e161a] font-display">
+<header class="sticky top-0 z-50 w-full bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-solid border-[#e8eef2] px-6 lg:px-40 py-3">
+<div class="max-w-[1280px] mx-auto flex items-center justify-between whitespace-nowrap">
+<div class="flex items-center gap-3 text-primary">
+<div class="size-8">
+<svg fill="currentColor" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z"></path>
+</svg>
+</div>
+<h2 class="text-[#0e161a] dark:text-white text-xl font-extrabold leading-tight tracking-tight uppercase">PLH Finance</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-center gap-10">
+<a class="text-[#0e161a] dark:text-white text-sm font-semibold hover:text-primary transition-colors" href="#">Expertises</a>
+<a class="text-[#0e161a] dark:text-white text-sm font-semibold hover:text-primary transition-colors" href="#">Profils</a>
+<a class="text-[#0e161a] dark:text-white text-sm font-semibold hover:text-primary transition-colors" href="#">Blogue</a>
+<a class="text-[#0e161a] dark:text-white text-sm font-semibold hover:text-primary transition-colors" href="#">À Propos</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden sm:flex min-w-[140px] cursor-pointer items-center justify-center rounded-lg h-11 px-5 bg-primary text-white text-sm font-bold tracking-wide hover:bg-primary/90 transition-all">
+                    Prendre Rendez-vous
+                </button>
+<div class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary border border-primary/20">
+<span class="material-symbols-outlined text-2xl">account_circle</span>
+</div>
+</div>
+</div>
+</header>
+<main class="flex flex-col">
+<section class="relative bg-white dark:bg-background-dark overflow-hidden">
+<div class="max-w-[1280px] mx-auto px-6 lg:px-40 py-16 lg:py-24 flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+<div class="flex flex-col gap-8 flex-1 text-center lg:text-left z-10">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary w-fit mx-auto lg:mx-0">
+<span class="material-symbols-outlined text-sm">verified_user</span>
+<span class="text-xs font-bold uppercase tracking-widest">Conseils Indépendants</span>
+</div>
+<div class="flex flex-col gap-4">
+<h1 class="text-[#0e161a] dark:text-white text-4xl lg:text-6xl font-black leading-[1.1] tracking-tight">
+                            Le côté humain <br/> de la <span class="text-primary">finance.</span>
+</h1>
+<p class="text-[#517994] dark:text-gray-400 text-lg lg:text-xl font-medium leading-relaxed max-w-xl mx-auto lg:mx-0">
+                            Planification financière indépendante et objective pour sécuriser vos rêves et protéger votre famille.
+                        </p>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+<button class="flex min-w-[200px] cursor-pointer items-center justify-center rounded-lg h-14 px-8 bg-primary text-white text-lg font-bold shadow-lg shadow-primary/30 hover:bg-primary/90 transition-all">
+                            Évaluation gratuite
+                        </button>
+<button class="flex min-w-[200px] cursor-pointer items-center justify-center rounded-lg h-14 px-8 border-2 border-primary/20 bg-transparent text-primary text-lg font-bold hover:bg-primary/5 transition-colors">
+                            Nos services
+                        </button>
+</div>
+</div>
+<div class="flex-1 w-full relative">
+<div class="relative aspect-[4/3] rounded-2xl bg-cover bg-center shadow-2xl overflow-hidden" data-alt="Philippe Leblanc-Hamel in a professional office setting" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDrXw0ugnJu59sZJSvbGbvzZNZXVFBO28Sc4QE37pkLyLCWjV12VCFVSvIvfNdWu7bBv7Kerq24iVCHm54XyTPhYTcLEkJDUBJaACWhLetJzoppavW3NCNnPKDvcm0avF5tL8Jo9lO7n_EF6FIVU58FS4DEwr6Xe9kF3AOZVX_s-A3-mlh5xMReA5usLNwUQMk34oVUY9gVCabKcOVbV6pDv5znpw9l2d-MKkAQGHMIAED4FBR2gD_R3qumyBqd1P9yQ-_IabZh5A");'>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-soft-gray dark:bg-background-dark/50 py-20 px-6 lg:px-40 border-y border-gray-100 dark:border-gray-800">
+<div class="max-w-[1280px] mx-auto">
+<div class="text-center mb-16 space-y-4">
+<h2 class="text-primary font-bold tracking-widest uppercase text-sm">Expertises ciblées</h2>
+<h3 class="text-[#0e161a] dark:text-white text-3xl lg:text-4xl font-extrabold tracking-tight">Solutions adaptées à votre réalité</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 auto-rows-[250px]">
+<div class="bg-white dark:bg-background-dark p-8 rounded-xl shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-gray-800 group md:col-span-2 md:row-span-1">
+<div class="flex h-full gap-6">
+<div class="size-14 shrink-0 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">business_center</span>
+</div>
+<div class="flex flex-col justify-center">
+<h4 class="text-[#0e161a] dark:text-white text-xl font-bold mb-3">Entrepreneur</h4>
+<p class="text-[#517994] dark:text-gray-400 text-sm leading-relaxed">
+                                    Planification stratégique pour la croissance et la relève de votre entreprise. Optimisation de la structure fiscale corporative.
+                                </p>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark p-8 rounded-xl shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-gray-800 group md:row-span-2">
+<div class="flex flex-col h-full">
+<div class="size-14 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">account_balance_wallet</span>
+</div>
+<h4 class="text-[#0e161a] dark:text-white text-xl font-bold mb-3">Gestion de patrimoine</h4>
+<p class="text-[#517994] dark:text-gray-400 text-sm leading-relaxed">
+                                Optimisation fiscale et gestion rigoureuse de vos actifs financiers. Une vision 360 pour préserver et faire croître vos acquis.
+                            </p>
+<div class="mt-auto pt-6 opacity-20 text-primary">
+<span class="material-symbols-outlined text-6xl">insights</span>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark p-8 rounded-xl shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-gray-800 group">
+<div class="size-14 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">family_restroom</span>
+</div>
+<h4 class="text-[#0e161a] dark:text-white text-xl font-bold mb-3">Parent travailleur</h4>
+<p class="text-[#517994] dark:text-gray-400 text-sm leading-relaxed">
+                            Sécuriser l'avenir de votre famille tout en conciliant carrière.
+                        </p>
+</div>
+<div class="bg-white dark:bg-background-dark p-8 rounded-xl shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-gray-800 group md:col-span-2">
+<div class="flex h-full gap-6">
+<div class="size-14 shrink-0 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">beach_access</span>
+</div>
+<div class="flex flex-col justify-center">
+<h4 class="text-[#0e161a] dark:text-white text-xl font-bold mb-3">Retraite</h4>
+<p class="text-[#517994] dark:text-gray-400 text-sm leading-relaxed">
+                                    Préparer une transition sereine pour maintenir votre style de vie souhaité. Nous planifions chaque étape pour une tranquillité d'esprit totale.
+                                </p>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark p-8 rounded-xl shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-gray-800 group">
+<div class="size-14 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">volunteer_activism</span>
+</div>
+<h4 class="text-[#0e161a] dark:text-white text-xl font-bold mb-3">Proche aidant</h4>
+<p class="text-[#517994] dark:text-gray-400 text-sm leading-relaxed">
+                            Accompagnement et conseils financiers pour un proche.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-white dark:bg-background-dark py-24 px-6 lg:px-40">
+<div class="max-w-[1280px] mx-auto">
+<div class="text-center mb-16">
+<span class="material-symbols-outlined text-5xl text-primary/20 mb-4">format_quote</span>
+<h3 class="text-[#0e161a] dark:text-white text-3xl font-extrabold tracking-tight">Ce que nos clients disent</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+<div class="flex flex-col gap-6">
+<div class="flex text-primary">
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+</div>
+<p class="text-[#0e161a] dark:text-gray-200 text-lg font-medium leading-relaxed italic">
+                            "Un service humain et professionnel. Philippe a su vulgariser des concepts complexes pour nous aider à bâtir notre plan de retraite en toute confiance."
+                        </p>
+<div class="flex items-center gap-4">
+<div class="size-12 rounded-full bg-gray-100 border border-gray-200 flex items-center justify-center text-gray-400">
+<span class="material-symbols-outlined">person</span>
+</div>
+<div>
+<p class="text-[#0e161a] dark:text-white font-bold">Serge &amp; Nathalie</p>
+<p class="text-[#517994] text-sm">Clients depuis 2018</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-6">
+<div class="flex text-primary">
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+</div>
+<p class="text-[#0e161a] dark:text-gray-200 text-lg font-medium leading-relaxed italic">
+                            "L'indépendance de PLH Finance est ce qui m'a attiré. J'ai enfin l'impression que les conseils sont donnés pour mon intérêt et non pour vendre des produits."
+                        </p>
+<div class="flex items-center gap-4">
+<div class="size-12 rounded-full bg-gray-100 border border-gray-200 flex items-center justify-center text-gray-400">
+<span class="material-symbols-outlined">person</span>
+</div>
+<div>
+<p class="text-[#0e161a] dark:text-white font-bold">Benoît Racine</p>
+<p class="text-[#517994] text-sm">Entrepreneur</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-[#f1f5f9] dark:bg-background-dark/80 py-10 px-6 lg:px-40 border-y border-gray-200 dark:border-gray-800">
+<div class="max-w-[1280px] mx-auto flex flex-wrap items-center justify-center gap-8 lg:gap-16">
+<p class="text-xs font-bold text-[#517994] uppercase tracking-[0.2em] w-full text-center lg:w-auto">Certifications AMF</p>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary/60">verified</span>
+<span class="text-sm font-bold text-[#517994] dark:text-white">Planificateur financier</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary/60">savings</span>
+<span class="text-sm font-bold text-[#517994] dark:text-white">Épargne collective</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary/60">security</span>
+<span class="text-sm font-bold text-[#517994] dark:text-white">Sécurité financière</span>
+</div>
+</div>
+</section>
+<section class="py-24 px-6 lg:px-40 bg-primary">
+<div class="max-w-[960px] mx-auto text-center space-y-8">
+<h2 class="text-white text-3xl lg:text-5xl font-black leading-tight tracking-tight">Prêt à sécuriser votre avenir ?</h2>
+<p class="text-white/80 text-lg lg:text-xl font-medium max-w-2xl mx-auto">
+                    Prenez rendez-vous aujourd'hui pour une première rencontre exploratoire sans engagement.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+<button class="bg-white text-primary px-10 py-5 rounded-lg text-lg font-bold hover:bg-gray-100 transition-colors shadow-xl">
+                        Prendre un rendez-vous
+                    </button>
+<button class="bg-transparent border-2 border-white text-white px-10 py-5 rounded-lg text-lg font-bold hover:bg-white/10 transition-colors">
+                        Appelez-nous au 1-800-FINANCE
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-white dark:bg-background-dark px-6 lg:px-40 py-20 border-t border-gray-100 dark:border-gray-800">
+<div class="max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="space-y-6">
+<div class="flex items-center gap-3 text-primary">
+<div class="size-6">
+<svg fill="currentColor" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z"></path>
+</svg>
+</div>
+<h2 class="text-[#0e161a] dark:text-white text-lg font-extrabold leading-tight uppercase">PLH Finance</h2>
+</div>
+<p class="text-[#517994] text-sm leading-relaxed">
+                    Conseils financiers indépendants pour particuliers et entreprises. Basé au Québec.
+                </p>
+<div class="flex gap-4">
+<a class="size-10 rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-xl">share</span>
+</a>
+<a class="size-10 rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-xl">mail</span>
+</a>
+</div>
+</div>
+<div>
+<h5 class="text-[#0e161a] dark:text-white font-bold mb-6">Expertises</h5>
+<ul class="space-y-4 text-[#517994] text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">Planification financière</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Gestion de portefeuille</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Assurances de personnes</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Fiscalité</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-[#0e161a] dark:text-white font-bold mb-6">Liens Rapides</h5>
+<ul class="space-y-4 text-[#517994] text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">Notre équipe</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Blogue financier</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">À Propos</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-[#0e161a] dark:text-white font-bold mb-6">Légal</h5>
+<ul class="space-y-4 text-[#517994] text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">Mentions légales</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Politique de protection des renseignements personnels</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Accessibilité</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-[1280px] mx-auto pt-10 mt-20 border-t border-gray-100 dark:border-gray-800 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-[#517994] text-xs">© 2024 PLH Finance. Tous droits réservés.</p>
+<div class="flex items-center gap-2 text-xs text-[#517994]">
+<span class="material-symbols-outlined text-sm">location_on</span>
+<span>Québec, Canada</span>
+</div>
+</div>
+</footer>
+
+</body></html>

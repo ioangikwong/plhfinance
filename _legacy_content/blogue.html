@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Blogue | PLH Finance - Conseils d'experts</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#19669a",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#121a20",
+                        "card-bg": "#ffffff",
+                        "text-main": "#0e161a",
+                        "text-muted": "#517994",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+        .blog-card:hover {
+            transform: translateY(-4px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-text-main dark:text-slate-100 min-h-screen flex flex-col">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 w-full bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<!-- Logo -->
+<div class="flex items-center gap-3">
+<div class="text-primary">
+<svg class="w-8 h-8" fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z"></path>
+</svg>
+</div>
+<span class="text-xl font-extrabold tracking-tight text-text-main dark:text-white">PLH Finance</span>
+</div>
+<!-- Desktop Menu -->
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Accueil</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Services</a>
+<a class="text-sm font-bold text-primary border-b-2 border-primary py-1" href="#">Blogue</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Contact</a>
+</nav>
+<!-- CTA -->
+<div class="flex items-center gap-4">
+<button class="hidden lg:flex bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg text-sm font-bold transition-all shadow-sm">
+                        Prendre Rendez-vous
+                    </button>
+<button class="md:hidden p-2 text-text-main dark:text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative bg-white dark:bg-slate-900 py-20 lg:py-32 overflow-hidden">
+<div class="absolute inset-0 opacity-10 dark:opacity-20 pointer-events-none">
+<div class="absolute -top-24 -left-24 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
+<div class="absolute top-1/2 -right-24 w-64 h-64 bg-primary/40 rounded-full blur-3xl"></div>
+</div>
+<div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<h1 class="text-4xl md:text-6xl font-extrabold text-text-main dark:text-white mb-6 tracking-tight">
+                    Blogue
+                </h1>
+<p class="text-lg md:text-xl text-text-muted dark:text-slate-400 max-w-2xl mx-auto leading-relaxed">
+                    Articles récents et conseils d'experts pour optimiser votre patrimoine et sécuriser l'avenir de vos proches.
+                </p>
+</div>
+</section>
+<!-- Category Filter -->
+<div class="bg-white dark:bg-slate-900 border-y border-slate-100 dark:border-slate-800">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex overflow-x-auto no-scrollbar gap-8 py-4 items-center">
+<button class="text-sm font-bold text-primary whitespace-nowrap border-b-2 border-primary pb-1">Tous les articles</button>
+<button class="text-sm font-semibold text-text-muted hover:text-primary whitespace-nowrap transition-colors">Assurances</button>
+<button class="text-sm font-semibold text-text-muted hover:text-primary whitespace-nowrap transition-colors">Proches aidants</button>
+<button class="text-sm font-semibold text-text-muted hover:text-primary whitespace-nowrap transition-colors">Investissements</button>
+<button class="text-sm font-semibold text-text-muted hover:text-primary whitespace-nowrap transition-colors">Planification</button>
+</div>
+</div>
+</div>
+<!-- Blog Grid -->
+<section class="py-16 bg-background-light dark:bg-background-dark">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Blog Card 1 -->
+<article class="blog-card bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 overflow-hidden flex flex-col group cursor-pointer">
+<div class="aspect-video relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Bureau professionnel avec documents financiers et stylos" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbE9XI821mX855OB-oIc5N0ArfvmrNTRblaFW9rB9-Jm77doUyrOeTiHAcDRZ40QfoRBR8ML-f3to4eRHvTxvxKXYOefVzr62fHaMWDGAt5Mty0cHpdSKfGHw7nwTEWmJLvcbOn_sIO_yQkRVbg7eRRvXXo14XpZ_h5RMZqEebGdTynOL94jT5csQLGN79lpT-7cVyzjiXdKR_PvG7YqSbNf6E-N83MG7OUweuGyFjV-5ADTTmLJwX8zBOCVE_l8YzbBwp0btfaA"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary/90 text-white text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded">Assurance</span>
+</div>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="text-lg font-bold text-text-main dark:text-white leading-snug mb-3 group-hover:text-primary transition-colors">
+                                Ai-je vraiment besoin de dépenser pour m'assurer?
+                            </h3>
+<p class="text-sm text-text-muted dark:text-slate-400 line-clamp-3 mb-6 flex-grow">
+                                Découvrez pourquoi l'assurance est un pilier fondamental de votre sécurité financière future et comment choisir la bonne couverture.
+                            </p>
+<a class="inline-flex items-center text-primary text-sm font-bold group/link" href="#">
+                                Lire la suite
+                                <span class="material-symbols-outlined ml-1 text-[18px] group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Blog Card 2 -->
+<article class="blog-card bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 overflow-hidden flex flex-col group cursor-pointer">
+<div class="aspect-video relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Femme d'affaires consultant des documents administratifs complexes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiUCwIpJhMrvMFw7ppce5ga249GaVN0bAMMPlf-F2wWXJfzC3j6NTd8ghkHxGeaVTAeYDX28kGmOghhPOcV9aozTBXlHsXP_gTdmed3PJBVdUibqh-TGvHMSc-qVP0q7tamo6U2eK_0UzK6HZLFmVEG3rrqi_rKy9YyDNFwM1YHZw4bjztQp3cJKBJDVqPRUwQ01hn3WrkktmzEpekbWhNeDMS2ULkw7oTL8ysCl8o4qEHBeA4_nU92WIMhgdXSNfupAxCASUNcA"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary/90 text-white text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded">Proches Aidants</span>
+</div>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="text-lg font-bold text-text-main dark:text-white leading-snug mb-3 group-hover:text-primary transition-colors">
+                                Les défis administratifs pour les proches aidants
+                            </h3>
+<p class="text-sm text-text-muted dark:text-slate-400 line-clamp-3 mb-6 flex-grow">
+                                Naviguer dans la bureaucratie tout en prenant soin de vos proches peut être épuisant. Voici nos conseils pour simplifier vos démarches.
+                            </p>
+<a class="inline-flex items-center text-primary text-sm font-bold group/link" href="#">
+                                Lire la suite
+                                <span class="material-symbols-outlined ml-1 text-[18px] group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Blog Card 3 -->
+<article class="blog-card bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 overflow-hidden flex flex-col group cursor-pointer">
+<div class="aspect-video relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Groupe de personnes marchant ensemble en signe de soutien" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9q2qEj67y_q0cQ1WK69D7WaqZRj8GajURG1WDVF5MDOsN6OQ_p3kkGikjawNA7taziEWNcH4vaC4Rm_gWEoGa3eNjnSr6eOPP-uuEoZifSlfMqsqGl2TV0bNajYJ56PthRx82AMZW8KpXJSp1HBR-HPo1Qs3GFPzoikok4nO5qKN9d1bkkkabeIdb3GlJqPr1qF2_MRdiSTgUQ6Kxo_7fjzBU01MkFUPwqEBgx1j8tQqgAhn5f37soZE6BNPixjogiolg-FgP7Q"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary/90 text-white text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded">Communauté</span>
+</div>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="text-lg font-bold text-text-main dark:text-white leading-snug mb-3 group-hover:text-primary transition-colors">
+                                Marcher les îles pour la proche aidance
+                            </h3>
+<p class="text-sm text-text-muted dark:text-slate-400 line-clamp-3 mb-6 flex-grow">
+                                Un récit inspirant sur la sensibilisation à la cause des proches aidants et l'impact de la solidarité communautaire.
+                            </p>
+<a class="inline-flex items-center text-primary text-sm font-bold group/link" href="#">
+                                Lire la suite
+                                <span class="material-symbols-outlined ml-1 text-[18px] group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Blog Card 4 -->
+<article class="blog-card bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 overflow-hidden flex flex-col group cursor-pointer">
+<div class="aspect-video relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Main tendue symbolisant le soutien et le réseau" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0OYjij7gqKf3NHVAKQo2z84i6qnBbVlCTFs7CVCVwbRcZjQqWBKJtPFU_l7qVU14E_LnsPm-RpfOUVWOjdSbpAAMIOZAVZSyBLvt0Foy1z1uQdgLoLYpsxkc_0TWLJYhNETWuDIA8KLWfkF0hi_z3ydAnpGLIo8oRMUFhvtDpDUx8OMM7PRe_ObXe6OpA9ZPC6Fyp2JoxRpAM04P1YruscQPq6xw-O5OBQNm6aotdp2Fcm9mTbApJrIfOHl0mPCDkdrrKsjNsDw"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary/90 text-white text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded">Proches Aidants</span>
+</div>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="text-lg font-bold text-text-main dark:text-white leading-snug mb-3 group-hover:text-primary transition-colors uppercase">
+                                PROCHES AIDANTS : PENSEZ À BIEN VOUS ENTOURER, VOUS AUSSI!
+                            </h3>
+<p class="text-sm text-text-muted dark:text-slate-400 line-clamp-3 mb-6 flex-grow">
+                                L'importance capitale d'un réseau de soutien solide pour ceux qui consacrent leur vie à aider les autres.
+                            </p>
+<a class="inline-flex items-center text-primary text-sm font-bold group/link" href="#">
+                                Lire la suite
+                                <span class="material-symbols-outlined ml-1 text-[18px] group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Blog Card 5 -->
+<article class="blog-card bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 overflow-hidden flex flex-col group cursor-pointer">
+<div class="aspect-video relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Bureau minimaliste suggérant la fin d'une recherche" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9tj1CvZ9gTm0zta0L6L3hJ4lsG5pSioLtMbdtFSe77vv9fyKojYKG7vo6TdQeHvf3xaEzQJWgb-NQ-JAE_2OP0Q33o9tEVk2axjMD3lgq1Fs1-eU-3SkWVmXXXQmcIw5DOfc4H3tiWOa6bFRTPacuRW3QrLKCeegUzAhHqiPTXjEGQvT908IaSD7zaFaLpYqCKqZRYFuVPkphopUo3mBr03NJr_qMrewIWfE22hRm7aQXJ65bsL-Zl1f9j2434mktiolqAm1eJQ"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary/90 text-white text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded">Planification</span>
+</div>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="text-lg font-bold text-text-main dark:text-white leading-snug mb-3 group-hover:text-primary transition-colors">
+                                Vous avez enfin fini de chercher!
+                            </h3>
+<p class="text-sm text-text-muted dark:text-slate-400 line-clamp-3 mb-6 flex-grow">
+                                La solution globale à vos besoins en planification financière et fiscale se trouve enfin à votre portée.
+                            </p>
+<a class="inline-flex items-center text-primary text-sm font-bold group/link" href="#">
+                                Lire la suite
+                                <span class="material-symbols-outlined ml-1 text-[18px] group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Blog Card 6 -->
+<article class="blog-card bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 overflow-hidden flex flex-col group cursor-pointer">
+<div class="aspect-video relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Pièces de monnaie empilées et plante qui pousse" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjRRKHAkwAwvhjw7pfQWu7XEGRHgZOtrEFYXoXmBapYm94ta3lPu-1W0k22uYLmeNpUv4ZJhSwpORwIpAMeWjXzFsJ-kdZAh5tE29OavKrJFh3uRrf1uU5sFj8ziX_yAlMXjt2Bst3uuAc2ESx1p0fywXI4apYiY8lVPrsIXIuzuo_qwZqay-AZtkjHL2vNe3NFi32u99xKHMdlUj5NkxEGlpyM6MfgcRQ7FtVilgw94tsSSqnaYsTUWJpAv1GThGRrPzVkmfyKA"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary/90 text-white text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded">Investissement</span>
+</div>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="text-lg font-bold text-text-main dark:text-white leading-snug mb-3 group-hover:text-primary transition-colors">
+                                C'est la patience qui enrichit!
+                            </h3>
+<p class="text-sm text-text-muted dark:text-slate-400 line-clamp-3 mb-6 flex-grow">
+                                Pourquoi les investisseurs qui cherchent à devenir riches rapidement échouent souvent face à ceux qui cultivent la patience.
+                            </p>
+<a class="inline-flex items-center text-primary text-sm font-bold group/link" href="#">
+                                Lire la suite
+                                <span class="material-symbols-outlined ml-1 text-[18px] group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Blog Card 7 -->
+<article class="blog-card bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 overflow-hidden flex flex-col group cursor-pointer">
+<div class="aspect-video relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Graphique boursier illustrant la volatilité des marchés" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZYdYMuhmdSDIAQ-fdcxmjdSE-YBSgTySik93egsa3SLWbAmzAVPJ5E5KAhabdSvmZXk7V2enZpI2lHIe6fOpvZCIN2htj_aUqkyvZ-Nz5iCvy-_95_o8r054KE55UC6wAhAbytD5oEgA95d322AJEb3BRZHpUPruyPS_uNBShUkUiEBmNe27Th-T9ooSuNXawZoZq_fptZ1b4F0tNYCg2OpOZNFJ3I55IhwG80dyneN7MaIsrXJUscENcwTipvo25aXAz4_1LEg"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary/90 text-white text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded">Psychologie</span>
+</div>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="text-lg font-bold text-text-main dark:text-white leading-snug mb-3 group-hover:text-primary transition-colors">
+                                Méfiez-vous de vos impulsions émotives
+                            </h3>
+<p class="text-sm text-text-muted dark:text-slate-400 line-clamp-3 mb-6 flex-grow">
+                                Apprenez à gérer le stress et les émotions lors des fluctuations de marché pour protéger vos investissements à long terme.
+                            </p>
+<a class="inline-flex items-center text-primary text-sm font-bold group/link" href="#">
+                                Lire la suite
+                                <span class="material-symbols-outlined ml-1 text-[18px] group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Blog Card 8 -->
+<article class="blog-card bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 overflow-hidden flex flex-col group cursor-pointer">
+<div class="aspect-video relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Main tenant une carte de crédit symbolisant l'autonomie financière" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPyzKER34i5fO5dVCIJD-SMzSttvPRKIs11_gQrjRDkcAjkrWKwH90797O0rC9beDIajwyMSgytAr7LOTWe_cueu9u6vnkUmxT4DhmKUnWqmB9olT1Hq71c4QMmf1bkz0UeagtDEFcMwxtLTcvVr9l-AQaXohRZ-Cs3-DebKFSmsa-w3_AfLMKf7gHSQt-xS94cv5VP9m8vsc6XqOQJVcZV7aMTLiGq1Wxh82rem07hnuad58wZ_Bdrd-r1acA6ojangOPuFV-hg"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary/90 text-white text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded">Indépendance</span>
+</div>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="text-lg font-bold text-text-main dark:text-white leading-snug mb-3 group-hover:text-primary transition-colors">
+                                Ne perdez pas votre autonomie financière!
+                            </h3>
+<p class="text-sm text-text-muted dark:text-slate-400 line-clamp-3 mb-6 flex-grow">
+                                Conseils pratiques et stratégies éprouvées pour protéger votre capital et préserver votre liberté de choix.
+                            </p>
+<a class="inline-flex items-center text-primary text-sm font-bold group/link" href="#">
+                                Lire la suite
+                                <span class="material-symbols-outlined ml-1 text-[18px] group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</article>
+</div>
+<!-- Pagination -->
+<div class="mt-16 flex justify-center">
+<nav class="flex items-center gap-2">
+<button class="w-10 h-10 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined text-[20px]">chevron_left</span>
+</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg bg-primary text-white font-bold">1</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors font-semibold">2</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors font-semibold">3</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</nav>
+</div>
+</div>
+</section>
+<!-- Newsletter Section -->
+<section class="py-20 bg-primary/5 dark:bg-primary/10 border-t border-slate-100 dark:border-slate-800">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<h2 class="text-3xl font-bold text-text-main dark:text-white mb-4">Restez informé</h2>
+<p class="text-text-muted dark:text-slate-400 mb-8">Inscrivez-vous à notre infolettre pour recevoir nos derniers conseils financiers directement dans votre boîte courriel.</p>
+<form class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
+<input class="flex-grow px-4 py-3 rounded-lg border-slate-200 dark:border-slate-700 dark:bg-slate-800 focus:ring-primary focus:border-primary" placeholder="votre@email.com" type="email"/>
+<button class="bg-primary text-white px-8 py-3 rounded-lg font-bold hover:bg-primary/90 transition-colors" type="submit">
+                        S'abonner
+                    </button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-white dark:bg-background-dark border-t border-slate-200 dark:border-slate-800 pt-16 pb-8">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-3 mb-6">
+<div class="text-primary">
+<svg class="w-6 h-6" fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z"></path>
+</svg>
+</div>
+<span class="text-lg font-extrabold tracking-tight text-text-main dark:text-white">PLH Finance</span>
+</div>
+<p class="text-text-muted dark:text-slate-400 text-sm leading-relaxed max-w-sm">
+                        Conseiller en sécurité financière dédié à votre prospérité. Philippe Leblanc-Hamel vous accompagne dans chaque étape de votre vie financière.
+                    </p>
+</div>
+<div>
+<h4 class="font-bold text-text-main dark:text-white mb-6">Liens rapides</h4>
+<ul class="space-y-4">
+<li><a class="text-sm text-text-muted hover:text-primary transition-colors" href="#">Accueil</a></li>
+<li><a class="text-sm text-text-muted hover:text-primary transition-colors" href="#">Services</a></li>
+<li><a class="text-sm text-text-muted hover:text-primary transition-colors" href="#">À propos</a></li>
+<li><a class="text-sm text-text-muted hover:text-primary transition-colors" href="#">Blogue</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-text-main dark:text-white mb-6">Contact</h4>
+<ul class="space-y-4">
+<li class="flex items-center gap-2 text-sm text-text-muted">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+                            info@plhfinance.ca
+                        </li>
+<li class="flex items-center gap-2 text-sm text-text-muted">
+<span class="material-symbols-outlined text-[18px]">call</span>
+                            (514) 123-4567
+                        </li>
+</ul>
+</div>
+</div>
+<div class="border-t border-slate-100 dark:border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-xs text-text-muted dark:text-slate-500">
+                    © 2024 PLH Finance. Tous droits réservés. Philippe Leblanc-Hamel.
+                </p>
+<div class="flex gap-6">
+<a class="text-text-muted hover:text-primary transition-colors text-xs" href="#">Confidentialité</a>
+<a class="text-text-muted hover:text-primary transition-colors text-xs" href="#">Conditions d'utilisation</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PLH Finance - Entrepreneur Service Page</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#65a6f6",
+                        "background-light": "#f5f7f8",
+                        "background-dark": "#101822",
+                        "charcoal": "#1a1a1a",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1.5rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-white text-charcoal font-display antialiased">
+<!-- Header / Navigation -->
+<nav class="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-md border-b border-slate-100">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="bg-primary p-1.5 rounded-lg text-white">
+<span class="material-symbols-outlined text-2xl block">account_balance_wallet</span>
+</div>
+<h2 class="text-charcoal text-xl font-extrabold tracking-tight">PLH Finance</h2>
+</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Services</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">À propos</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Blogue</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Contact</a>
+<button class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-full text-sm font-bold transition-all shadow-md shadow-primary/20">
+                    Évaluation gratuite
+                </button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative w-full min-h-[85vh] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-black/50 z-10"></div>
+<img alt="Entrepreneur Context" class="w-full h-full object-cover" data-alt="Professional entrepreneur in a modern office building" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAScOW5h1lBiKO_3GgOpxIiQdnwj9gyg4-RW9sg6z876bK08GyFJOdLtwrlX9C-7VOq25H2-FCQ6C5ipcuKR4mRqCPggW9ToVxvcPTMy4CJw_3veosy5bLGwg2p3AruwnS2wXDMGKtQW30NUGvnUkpk3PMcsgfDFebJVmTfLl2tqQqDfsSy7DMkZxeOvKSEH69kw8dnZdL1lSrRZEo0IINylHFWp64q17B0o4ThbdvpX4gFjhlNfxUv-Udj1fINBUWex4RjDTY9vM0"/>
+</div>
+<div class="relative z-20 max-w-4xl px-6 text-center text-white">
+<h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight tracking-tight">
+                Entrepreneur / Travailleur autonome
+            </h1>
+<p class="text-lg md:text-2xl font-light opacity-90 mb-10 max-w-2xl mx-auto leading-relaxed">
+                Pourquoi vous limiter à une seule option? Planifiez et optimisez vos ressources financières.
+            </p>
+<button class="bg-primary hover:bg-primary/90 text-white px-10 py-5 rounded-full text-lg font-extrabold transition-all shadow-xl shadow-primary/30 flex items-center gap-3 mx-auto">
+                Évaluation gratuite
+                <span class="material-symbols-outlined">trending_flat</span>
+</button>
+</div>
+</section>
+<!-- Intro Section -->
+<section class="py-24 md:py-32 bg-white">
+<div class="max-w-4xl mx-auto px-6 text-center">
+<span class="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Notre Mission</span>
+<h2 class="text-3xl md:text-4xl font-bold mb-8 leading-snug">
+                La mission de Philippe Leblanc-Hamel est d'optimiser vos finances pour vous permettre de bâtir votre patrimoine en toute confiance.
+            </h2>
+<div class="h-1.5 w-24 bg-primary/20 rounded-full mx-auto mb-8"></div>
+<p class="text-slate-600 text-lg md:text-xl leading-relaxed font-light">
+                Optimiser les finances des entrepreneurs pour leur permettre de se concentrer sur ce qui compte vraiment. Une approche personnalisée pour bâtir votre patrimoine en toute confiance, avec une vision à long terme adaptée à la réalité des travailleurs autonomes.
+            </p>
+</div>
+</section>
+<!-- Benefits Grid (Comment?) -->
+<section class="py-24 bg-background-light">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex items-center gap-4 mb-16">
+<h3 class="text-4xl font-black">Comment?</h3>
+<div class="h-px flex-1 bg-slate-200"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1: Time -->
+<div class="bg-white p-10 rounded-xl shadow-sm border border-slate-100 hover:shadow-xl hover:shadow-primary/5 transition-all group">
+<div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">schedule</span>
+</div>
+<h4 class="text-xl font-bold mb-4">Gestion du Temps</h4>
+<p class="text-slate-500 leading-relaxed">Libérez-vous des contraintes administratives financières pour vous concentrer sur la croissance de votre entreprise.</p>
+</div>
+<!-- Card 2: Retirement -->
+<div class="bg-white p-10 rounded-xl shadow-sm border border-slate-100 hover:shadow-xl hover:shadow-primary/5 transition-all group">
+<div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">savings</span>
+</div>
+<h4 class="text-xl font-bold mb-4">Retraite &amp; Épargne</h4>
+<p class="text-slate-500 leading-relaxed">Stratégies d'investissement optimisées fiscalement pour assurer votre futur et celui de votre famille.</p>
+</div>
+<!-- Card 3: Protection -->
+<div class="bg-white p-10 rounded-xl shadow-sm border border-slate-100 hover:shadow-xl hover:shadow-primary/5 transition-all group">
+<div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">verified_user</span>
+</div>
+<h4 class="text-xl font-bold mb-4">Protection du Revenu</h4>
+<p class="text-slate-500 leading-relaxed">Mise en place de filets de sécurité pour pallier aux imprévus et protéger vos actifs durement gagnés.</p>
+</div>
+<!-- Card 4: Plan -->
+<div class="bg-white p-10 rounded-xl shadow-sm border border-slate-100 hover:shadow-xl hover:shadow-primary/5 transition-all group">
+<div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">map</span>
+</div>
+<h4 class="text-xl font-bold mb-4">Planification Intégrée</h4>
+<p class="text-slate-500 leading-relaxed">Une vision globale qui unifie vos finances personnelles et corporatives pour une efficacité maximale.</p>
+</div>
+<!-- Card 5: Network -->
+<div class="bg-white p-10 rounded-xl shadow-sm border border-slate-100 hover:shadow-xl hover:shadow-primary/5 transition-all group">
+<div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">hub</span>
+</div>
+<h4 class="text-xl font-bold mb-4">Réseau d'Experts</h4>
+<p class="text-slate-500 leading-relaxed">Accès privilégié à des comptables, fiscalistes et notaires spécialisés pour entrepreneurs.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Checklist Section (Assurez-vous :) -->
+<section class="py-24 bg-charcoal text-white overflow-hidden relative">
+<div class="absolute top-0 right-0 w-1/2 h-full bg-primary/5 -skew-x-12 transform translate-x-1/4"></div>
+<div class="max-w-7xl mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center gap-16">
+<div class="w-full md:w-1/2">
+<h3 class="text-4xl font-bold mb-8">Assurez-vous de couvrir vos bases :</h3>
+<p class="text-slate-400 text-lg mb-12">Nous analysons chaque facette de votre situation pour ne rien laisser au hasard.</p>
+<ul class="space-y-6">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">check_circle</span>
+<div>
+<span class="text-xl font-medium">Cercles professionnels &amp; partenariats</span>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">check_circle</span>
+<div>
+<span class="text-xl font-medium">Budgetisation &amp; flux de trésorerie</span>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">check_circle</span>
+<div>
+<span class="text-xl font-medium">Types d'entreprises (Incorporé vs Autonome)</span>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">check_circle</span>
+<div>
+<span class="text-xl font-medium">Optimisation des IDs fiscaux</span>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">check_circle</span>
+<div>
+<span class="text-xl font-medium">Planification de contingence (Assurances)</span>
+</div>
+</li>
+</ul>
+</div>
+<div class="w-full md:w-1/2">
+<div class="bg-white/5 p-1 rounded-xl backdrop-blur-sm border border-white/10">
+<img alt="Financial Professional Tools" class="rounded-lg shadow-2xl w-full grayscale contrast-125 opacity-80" data-alt="Modern workspace with professional financial tools" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0uM4NaH8KS3-r2FplOAss0AgRCwjWCM4Nf7Z1v3fJm5bSzG-F5XB3f_7z8mMSbR86v4I-ethH469Fs62VPfyMy9iktAOkb0HbwH6uD7BMGM9g5QFYwoAffLngNrSNVpF0ukeo10p_Xfk4EP1Tw2Jm_GTexhJVB7f_Ho8Fo4gjVoooaQNmjkBd8v6INmNR-MN9GOqq6lkDw9mKDI1o1A0G6t2lqw03HnJQtcxFYJgKZuMeABPJ7_2H28JlcTvQ7HIs6kWW6P2Li44"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonial Section -->
+<section class="py-32 bg-white">
+<div class="max-w-4xl mx-auto px-6 text-center">
+<div class="flex justify-center gap-1 mb-8">
+<span class="material-symbols-outlined text-[#facc15] fill-[1]">star</span>
+<span class="material-symbols-outlined text-[#facc15] fill-[1]">star</span>
+<span class="material-symbols-outlined text-[#facc15] fill-[1]">star</span>
+<span class="material-symbols-outlined text-[#facc15] fill-[1]">star</span>
+<span class="material-symbols-outlined text-[#facc15] fill-[1]">star</span>
+</div>
+<blockquote class="text-2xl md:text-3xl font-medium italic text-slate-700 leading-relaxed mb-10">
+                "Travailler avec Philippe a changé ma perception de mes finances. En tant qu'entrepreneur, c'est le calme et la clarté dont j'avais besoin pour propulser mon entreprise au niveau supérieur."
+            </blockquote>
+<cite class="not-italic flex flex-col items-center">
+<span class="font-bold text-xl text-charcoal">Benoît Racine</span>
+<span class="text-primary text-sm tracking-widest uppercase mt-1">Directeur de croissance</span>
+</cite>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="py-24 bg-primary text-white">
+<div class="max-w-5xl mx-auto px-6 text-center">
+<h2 class="text-4xl md:text-5xl font-black mb-6 leading-tight">
+                On fait l'évaluation de votre situation financière gratuitement!*
+            </h2>
+<p class="text-white/80 text-xl mb-12 max-w-2xl mx-auto font-light leading-relaxed">
+                Prenez le contrôle dès aujourd'hui et donnez à vos projets l'élan qu'ils méritent. Aucun engagement requis.
+            </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+<button class="w-full sm:w-auto bg-charcoal text-white hover:bg-black px-10 py-5 rounded-full text-lg font-bold transition-all shadow-xl flex items-center justify-center gap-3">
+                    Prêt à prendre vos finances en main?
+                </button>
+<a class="text-white font-semibold underline underline-offset-8 hover:text-white/80 transition-all" href="#">
+                    Voir nos services détaillés
+                </a>
+</div>
+<p class="mt-8 text-sm text-white/60 italic font-light">
+                * Sous réserve d'admissibilité. Des conditions s'appliquent.
+            </p>
+</div>
+</section>
+<!-- Footer -->
+<footer class="py-12 bg-white border-t border-slate-100">
+<div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-3 grayscale">
+<div class="bg-charcoal p-1 rounded text-white">
+<span class="material-symbols-outlined text-xl block">account_balance_wallet</span>
+</div>
+<h2 class="text-charcoal text-lg font-bold">PLH Finance</h2>
+</div>
+<p class="text-slate-400 text-sm">© 2024 PLH Finance. Tous droits réservés. Philippe Leblanc-Hamel est un conseiller financier agréé.</p>
+<div class="flex gap-6">
+<a class="text-slate-400 hover:text-primary transition-colors" href="#">LinkedIn</a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#">Facebook</a>
+</div>
+</div>
+</footer>
+</body></html>
