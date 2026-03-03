@@ -19,7 +19,7 @@ export default function Hero() {
                         </p>
 <div className="pt-4 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
 <button className="bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-xl text-lg font-bold shadow-xl shadow-primary/20 transition-all hover:-translate-y-1">
-                                Évaluation gratuite
+                                Consultation sans frais
                             </button>
 <button className="bg-white border-2 border-slate-200 hover:border-primary/30 text-slate-700 px-8 py-4 rounded-xl text-lg font-bold transition-all">
                                 Découvrir nos services

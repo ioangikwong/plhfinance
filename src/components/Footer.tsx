@@ -27,13 +27,14 @@ export default function Footer() {
           </div>
         </div>
         <div>
-          <h5 className="text-[#0e161a] dark:text-white font-bold mb-6">Expertises</h5>
+          <h5 className="text-[#0e161a] dark:text-white font-bold mb-6">Services</h5>
           <ul className="space-y-4 text-[#517994] text-sm">
             <li><Link className="hover:text-primary transition-colors" href="/entrepreneur-travailleur-autonome">Entrepreneur</Link></li>
             <li><Link className="hover:text-primary transition-colors" href="/gestion-de-patrimoine">Gestion de patrimoine</Link></li>
             <li><Link className="hover:text-primary transition-colors" href="/parents-travailleurs">Parents travailleurs</Link></li>
             <li><Link className="hover:text-primary transition-colors" href="/proches-aidants">Proches aidants</Link></li>
             <li><Link className="hover:text-primary transition-colors" href="/travailleur-preoccupe-par-la-retraite">Retraite</Link></li>
+            <li><Link className="hover:text-primary transition-colors font-semibold text-primary" href="/planificateur-financier#assurances">Assurance de personnes</Link></li>
           </ul>
         </div>
         <div>

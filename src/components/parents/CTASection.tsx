@@ -7,7 +7,7 @@ export default function CTASection() {
                     Obtenez une analyse sans frais de votre situation et découvrez les subventions auxquelles vous avez droit.
                 </p>
 <button className="bg-white text-primary hover:bg-slate-100 px-10 py-5 rounded-2xl text-xl font-extrabold transition-all shadow-2xl active:scale-95">
-                    Évaluation gratuite
+                    Consultation sans frais
                 </button>
 </div>
 </section>

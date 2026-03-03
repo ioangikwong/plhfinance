@@ -14,7 +14,7 @@ export default function Hero() {
                         Vos finances sont-elles devenues compliquées? C'est maintenant que la gestion de patrimoine entre en jeu.
                     </p>
 <button className="flex items-center justify-center rounded-lg bg-primary px-8 py-4 text-lg font-bold text-white shadow-xl hover:translate-y-[-2px] transition-all">
-                        Évaluation gratuite
+                        Consultation sans frais
                     </button>
 </div>
 </div>

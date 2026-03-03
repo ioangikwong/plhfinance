@@ -20,7 +20,7 @@ export default function PlanificateurFinancierPage() {
                             Parce que votre réalité financière mérite bien plus qu'une simple feuille de calcul.
                         </p>
                         <Link href="/contact" className="inline-flex items-center justify-center gap-3 bg-white text-primary hover:bg-gray-100 px-10 py-5 rounded-full text-lg font-extrabold transition-all shadow-xl shadow-black/20 mx-auto group">
-                            Évaluation gratuite
+                            Consultation sans frais
                             <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">trending_flat</span>
                         </Link>
                     </div>
@@ -135,7 +135,7 @@ export default function PlanificateurFinancierPage() {
                             <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mb-6 shrink-0 backdrop-blur-md">
                                 <span className="material-symbols-outlined text-3xl text-white">security</span>
                             </div>
-                            <h3 className="text-3xl font-bold mb-6 leading-tight">Assurances : sécurité financière</h3>
+                            <h3 className="text-3xl font-bold mb-6 leading-tight">Assurance de personnes et sécurité financière</h3>
                             <div className="h-1.5 w-24 bg-primary rounded-full mb-8"></div>
 
                             <p className="text-gray-300 mb-6 leading-relaxed text-lg">
@@ -178,6 +178,43 @@ export default function PlanificateurFinancierPage() {
                                     src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2070&auto=format&fit=crop"
                                 />
                             </div>
+                        </div>
+                    </div>
+
+                    {/* Fournisseurs de fonds */}
+                    <div className="bg-white dark:bg-slate-800 rounded-[30px] p-10 shadow-lg border border-slate-100 dark:border-slate-700 hover:shadow-xl transition-all">
+                        <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 shrink-0">
+                            <span className="material-symbols-outlined text-3xl text-primary">account_balance</span>
+                        </div>
+                        <h3 className="text-2xl font-bold mb-6 text-[#1a1a1a] dark:text-white">Nos fournisseurs de fonds</h3>
+                        <p className="text-slate-600 dark:text-slate-300 mb-8 leading-relaxed">
+                            En tant que représentant indépendant, j&apos;ai accès aux produits des plus grands gestionnaires de fonds au Canada et dans le monde. Cela me permet de sélectionner les meilleures solutions pour votre profil.
+                        </p>
+                        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm font-semibold text-slate-700 dark:text-slate-300">
+                            <div className="bg-slate-50 dark:bg-slate-900/50 rounded-xl p-4 text-center">Desjardins</div>
+                            <div className="bg-slate-50 dark:bg-slate-900/50 rounded-xl p-4 text-center">Fidelity</div>
+                            <div className="bg-slate-50 dark:bg-slate-900/50 rounded-xl p-4 text-center">Manuvie</div>
+                            <div className="bg-slate-50 dark:bg-slate-900/50 rounded-xl p-4 text-center">Canada Vie</div>
+                            <div className="bg-slate-50 dark:bg-slate-900/50 rounded-xl p-4 text-center">iA Groupe financier</div>
+                            <div className="bg-slate-50 dark:bg-slate-900/50 rounded-xl p-4 text-center">RBC GAM</div>
+                            <div className="bg-slate-50 dark:bg-slate-900/50 rounded-xl p-4 text-center">BMO</div>
+                            <div className="bg-slate-50 dark:bg-slate-900/50 rounded-xl p-4 text-center">Mackenzie</div>
+                            <div className="bg-slate-50 dark:bg-slate-900/50 rounded-xl p-4 text-center">CI Financial</div>
+                        </div>
+                    </div>
+
+                    {/* Image tarte des professions */}
+                    <div className="bg-slate-50 dark:bg-slate-800/30 rounded-[40px] p-10 md:p-16 shadow-xl border border-slate-100 dark:border-slate-800 flex flex-col items-center text-center">
+                        <h3 className="text-2xl font-bold mb-4 text-[#1a1a1a] dark:text-white">Les 7 domaines de la planification financière</h3>
+                        <p className="text-slate-600 dark:text-slate-400 mb-8 max-w-2xl leading-relaxed">
+                            Le planificateur financier couvre l&apos;ensemble des aspects de votre vie financière grâce à une approche intégrée.
+                        </p>
+                        <div className="w-full max-w-lg">
+                            <img
+                                src="/tarte-professions.png"
+                                alt="Les 7 domaines de la planification financière - Finances, Fiscalité, Aspects légaux, Assurance, Placements, Retraite, Succession"
+                                className="w-full h-auto rounded-2xl"
+                            />
                         </div>
                     </div>
 

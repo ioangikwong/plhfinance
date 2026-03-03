@@ -21,7 +21,7 @@ export default function Hero() {
                     </p>
                     <div className="flex flex-wrap gap-4">
                         <Link href="/contact" className="bg-primary text-white text-lg font-bold py-4 px-10 rounded-lg shadow-xl hover:bg-primary/90 transition-all hover:-translate-y-1">
-                            Évaluation gratuite
+                            Consultation sans frais
                         </Link>
                     </div>
                 </div>

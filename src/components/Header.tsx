@@ -146,7 +146,7 @@ export default function Header() {
             </button>
 
             <Link href="/planificateur-financier" onClick={() => setIsMobileMenuOpen(false)} className="text-3xl font-black text-[#0e161a] dark:text-white transition-colors hover:text-primary">
-              Mon expertise
+              Planificateur financier
             </Link>
 
             <Link href="/blogue" onClick={() => setIsMobileMenuOpen(false)} className="text-3xl font-black text-[#0e161a] dark:text-white transition-colors hover:text-primary">

@@ -46,7 +46,7 @@ export default function ServiceTemplate({ data }: { data: ServiceData }) {
                             </p>
                         )}
                         <Link href="/contact" className="inline-flex items-center justify-center gap-3 bg-white text-primary hover:bg-gray-100 px-10 py-5 rounded-full text-lg font-extrabold transition-all shadow-xl shadow-black/20 mx-auto group">
-                            Évaluation gratuite
+                            Consultation sans frais
                             <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">trending_flat</span>
                         </Link>
                     </div>

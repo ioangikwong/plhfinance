@@ -9,7 +9,7 @@ export default function ParentsTravailleursPage() {
     contentTitle: "Un suivi et un accompagnement personnalisé en tant que parent",
     paragraphs: [
       "Un suivi et un accompagnement personnalisé vous assurent du bon fonctionnement de vos stratégies et de l'atteinte de vos objectifs en tant que parent. L'expérience Solutions financières PLH vise à simplifier les choses pour vous.",
-      "Nous vous offrons une évaluation gratuite de votre situation financière. Si les solutions proposées vous conviennent, vous pourrez souscrire aux produits recommandés via Solutions financières Philippe Leblanc-Hamel, au juste prix."
+      "Nous vous offrons une consultation sans frais de votre situation financière. Si les solutions proposées vous conviennent, vous pourrez souscrire aux produits recommandés via Solutions financières Philippe Leblanc-Hamel, au juste prix."
     ],
 
     list1Title: "Comment?",

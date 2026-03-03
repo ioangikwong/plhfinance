@@ -8,7 +8,7 @@ export default function Page() {
                 <div className="absolute inset-0 -z-20">
                     <img
                         src="/hero.jpg"
-                        alt="Un homme observant une montagne"
+                        alt="Consultation financière chaleureuse entre un conseiller et sa cliente"
                         className="h-full w-full object-cover object-center"
                     />
                 </div>
@@ -33,9 +33,13 @@ export default function Page() {
                             </p>
                         </div>
 
+                        <p className="text-gray-300 text-base sm:text-lg font-medium leading-relaxed max-w-2xl mx-auto italic drop-shadow-sm">
+                            Vous voulez discuter avec une vraie personne et non pas seulement passer par un robot ou un site automatisé? Obtenez la solution adaptée spécialement pour vous.
+                        </p>
+
                         <div className="flex flex-col sm:flex-row gap-5 justify-center mt-6">
                             <Link href="/contact" className="flex min-w-[220px] cursor-pointer items-center justify-center rounded-xl h-14 px-8 bg-primary text-white text-lg font-bold shadow-lg shadow-primary/30 hover:bg-primary/90 hover:scale-105 transition-all duration-300">
-                                Évaluation gratuite
+                                Consultation sans frais
                             </Link>
                             <Link href="#expertises" className="flex min-w-[220px] cursor-pointer items-center justify-center rounded-xl h-14 px-8 border-2 border-white/30 backdrop-blur-sm bg-white/5 text-white text-lg font-bold hover:bg-white/10 hover:border-white/50 transition-all duration-300">
                                 Nos services
@@ -75,64 +79,74 @@ export default function Page() {
             <section id="expertises" className="bg-white dark:bg-background-dark py-24 px-6 lg:px-40 scroll-mt-24 z-10 relative">
                 <div className="max-w-[1280px] mx-auto w-full">
                     <div className="text-center mb-16 space-y-4">
-                        <h2 className="text-primary font-bold tracking-widest uppercase text-sm">Services financiers</h2>
+                        <h2 className="text-primary font-bold tracking-widest uppercase text-sm">Clientèle cible</h2>
                         <h3 className="text-[#0e161a] dark:text-white text-3xl lg:text-4xl font-extrabold tracking-tight">Des solutions adaptées à votre réalité</h3>
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
 
-                        <Link href="/entrepreneur-travailleur-autonome" className="bg-white dark:bg-background-dark p-8 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all border border-gray-100 dark:border-gray-800 group block flex flex-col items-center text-center h-full relative">
-                            <div className="size-16 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
-                                <span className="material-symbols-outlined text-3xl">business_center</span>
+                        <Link href="/entrepreneur-travailleur-autonome" className="bg-white dark:bg-background-dark rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all border border-gray-100 dark:border-gray-800 group block flex flex-col items-center text-center h-full relative overflow-hidden">
+                            <div className="w-full h-36 overflow-hidden">
+                                <img src="/clientele/entrepreneur.jpg" alt="Entrepreneur" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                             </div>
-                            <h4 className="text-[#0e161a] dark:text-white text-lg font-bold mb-3 group-hover:text-primary transition-colors leading-tight">Entrepreneur</h4>
-                            <p className="text-[#517994] dark:text-gray-400 text-sm leading-relaxed mt-auto mb-4">
-                                Stratégie de croissance et optimisation fiscale corporative.
-                            </p>
-                            <span className="material-symbols-outlined text-primary/30 group-hover:text-primary group-hover:translate-x-1 transition-all mt-auto text-xl">arrow_forward</span>
+                            <div className="p-6 flex flex-col items-center flex-1">
+                                <h4 className="text-[#0e161a] dark:text-white text-lg font-bold mb-3 group-hover:text-primary transition-colors leading-tight">Entrepreneur</h4>
+                                <p className="text-[#517994] dark:text-gray-400 text-sm leading-relaxed mt-auto mb-4">
+                                    Stratégie de croissance et optimisation fiscale corporative.
+                                </p>
+                                <span className="material-symbols-outlined text-primary/30 group-hover:text-primary group-hover:translate-x-1 transition-all mt-auto text-xl">arrow_forward</span>
+                            </div>
                         </Link>
 
-                        <Link href="/gestion-de-patrimoine" className="bg-white dark:bg-background-dark p-8 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all border border-gray-100 dark:border-gray-800 group block flex flex-col items-center text-center h-full relative">
-                            <div className="size-16 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
-                                <span className="material-symbols-outlined text-3xl">account_balance_wallet</span>
+                        <Link href="/gestion-de-patrimoine" className="bg-white dark:bg-background-dark rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all border border-gray-100 dark:border-gray-800 group block flex flex-col items-center text-center h-full relative overflow-hidden">
+                            <div className="w-full h-36 overflow-hidden">
+                                <img src="/clientele/patrimoine.jpg" alt="Gestion de patrimoine" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                             </div>
-                            <h4 className="text-[#0e161a] dark:text-white text-lg font-bold mb-3 group-hover:text-primary transition-colors leading-tight">Gestion de patrimoine</h4>
-                            <p className="text-[#517994] dark:text-gray-400 text-sm leading-relaxed mt-auto mb-4">
-                                Optimisation et croissance rigoureuse de vos actifs.
-                            </p>
-                            <span className="material-symbols-outlined text-primary/30 group-hover:text-primary group-hover:translate-x-1 transition-all mt-auto text-xl">arrow_forward</span>
+                            <div className="p-6 flex flex-col items-center flex-1">
+                                <h4 className="text-[#0e161a] dark:text-white text-lg font-bold mb-3 group-hover:text-primary transition-colors leading-tight">Gestion de patrimoine</h4>
+                                <p className="text-[#517994] dark:text-gray-400 text-sm leading-relaxed mt-auto mb-4">
+                                    Optimisation et croissance rigoureuse de vos actifs.
+                                </p>
+                                <span className="material-symbols-outlined text-primary/30 group-hover:text-primary group-hover:translate-x-1 transition-all mt-auto text-xl">arrow_forward</span>
+                            </div>
                         </Link>
 
-                        <Link href="/parents-travailleurs" className="bg-white dark:bg-background-dark p-8 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all border border-gray-100 dark:border-gray-800 group block flex flex-col items-center text-center h-full relative">
-                            <div className="size-16 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
-                                <span className="material-symbols-outlined text-3xl">family_restroom</span>
+                        <Link href="/parents-travailleurs" className="bg-white dark:bg-background-dark rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all border border-gray-100 dark:border-gray-800 group block flex flex-col items-center text-center h-full relative overflow-hidden">
+                            <div className="w-full h-36 overflow-hidden">
+                                <img src="/clientele/parents.jpg" alt="Parents travailleurs" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                             </div>
-                            <h4 className="text-[#0e161a] dark:text-white text-lg font-bold mb-3 group-hover:text-primary transition-colors leading-tight">Parent travailleur</h4>
-                            <p className="text-[#517994] dark:text-gray-400 text-sm leading-relaxed mt-auto mb-4">
-                                Sécurisation de l&apos;avenir familial et conciliation de carrière.
-                            </p>
-                            <span className="material-symbols-outlined text-primary/30 group-hover:text-primary group-hover:translate-x-1 transition-all mt-auto text-xl">arrow_forward</span>
+                            <div className="p-6 flex flex-col items-center flex-1">
+                                <h4 className="text-[#0e161a] dark:text-white text-lg font-bold mb-3 group-hover:text-primary transition-colors leading-tight">Parent travailleur</h4>
+                                <p className="text-[#517994] dark:text-gray-400 text-sm leading-relaxed mt-auto mb-4">
+                                    Sécurisation de l&apos;avenir familial et conciliation de carrière.
+                                </p>
+                                <span className="material-symbols-outlined text-primary/30 group-hover:text-primary group-hover:translate-x-1 transition-all mt-auto text-xl">arrow_forward</span>
+                            </div>
                         </Link>
 
-                        <Link href="/travailleur-preoccupe-par-la-retraite" className="bg-white dark:bg-background-dark p-8 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all border border-gray-100 dark:border-gray-800 group block flex flex-col items-center text-center h-full relative">
-                            <div className="size-16 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
-                                <span className="material-symbols-outlined text-3xl">beach_access</span>
+                        <Link href="/travailleur-preoccupe-par-la-retraite" className="bg-white dark:bg-background-dark rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all border border-gray-100 dark:border-gray-800 group block flex flex-col items-center text-center h-full relative overflow-hidden">
+                            <div className="w-full h-36 overflow-hidden">
+                                <img src="/clientele/retraite.jpg" alt="Retraite" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                             </div>
-                            <h4 className="text-[#0e161a] dark:text-white text-lg font-bold mb-3 group-hover:text-primary transition-colors leading-tight">Retraite</h4>
-                            <p className="text-[#517994] dark:text-gray-400 text-sm leading-relaxed mt-auto mb-4">
-                                Planification de chaque étape pour une transition sereine.
-                            </p>
-                            <span className="material-symbols-outlined text-primary/30 group-hover:text-primary group-hover:translate-x-1 transition-all mt-auto text-xl">arrow_forward</span>
+                            <div className="p-6 flex flex-col items-center flex-1">
+                                <h4 className="text-[#0e161a] dark:text-white text-lg font-bold mb-3 group-hover:text-primary transition-colors leading-tight">Retraite</h4>
+                                <p className="text-[#517994] dark:text-gray-400 text-sm leading-relaxed mt-auto mb-4">
+                                    Planification de chaque étape pour une transition sereine.
+                                </p>
+                                <span className="material-symbols-outlined text-primary/30 group-hover:text-primary group-hover:translate-x-1 transition-all mt-auto text-xl">arrow_forward</span>
+                            </div>
                         </Link>
 
-                        <Link href="/proches-aidants" className="bg-white dark:bg-background-dark p-8 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all border border-gray-100 dark:border-gray-800 group block flex flex-col items-center text-center h-full relative">
-                            <div className="size-16 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
-                                <span className="material-symbols-outlined text-3xl">volunteer_activism</span>
+                        <Link href="/proches-aidants" className="bg-white dark:bg-background-dark rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all border border-gray-100 dark:border-gray-800 group block flex flex-col items-center text-center h-full relative overflow-hidden">
+                            <div className="w-full h-36 overflow-hidden">
+                                <img src="/clientele/proches.jpg" alt="Proches aidants" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                             </div>
-                            <h4 className="text-[#0e161a] dark:text-white text-lg font-bold mb-3 group-hover:text-primary transition-colors leading-tight">Proche aidant</h4>
-                            <p className="text-[#517994] dark:text-gray-400 text-sm leading-relaxed mt-auto mb-4">
-                                Accompagnement et conseils financiers stratégiques.
-                            </p>
-                            <span className="material-symbols-outlined text-primary/30 group-hover:text-primary group-hover:translate-x-1 transition-all mt-auto text-xl">arrow_forward</span>
+                            <div className="p-6 flex flex-col items-center flex-1">
+                                <h4 className="text-[#0e161a] dark:text-white text-lg font-bold mb-3 group-hover:text-primary transition-colors leading-tight">Proche aidant</h4>
+                                <p className="text-[#517994] dark:text-gray-400 text-sm leading-relaxed mt-auto mb-4">
+                                    Accompagnement et conseils financiers stratégiques.
+                                </p>
+                                <span className="material-symbols-outlined text-primary/30 group-hover:text-primary group-hover:translate-x-1 transition-all mt-auto text-xl">arrow_forward</span>
+                            </div>
                         </Link>
 
                     </div>
@@ -145,7 +159,9 @@ export default function Page() {
                         <span className="material-symbols-outlined text-5xl text-primary/20 mb-4">format_quote</span>
                         <h3 className="text-[#0e161a] dark:text-white text-3xl font-extrabold tracking-tight">Ce que nos clients disent</h3>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    {/* Testimonials grid */}
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         {/* Testimonial 1 */}
                         <div className="flex flex-col gap-6 bg-soft-gray dark:bg-slate-800/50 p-8 rounded-2xl border border-gray-100 dark:border-gray-700 relative shadow-sm hover:shadow-md transition-shadow">
                             <span className="material-symbols-outlined text-4xl text-primary/20 absolute top-4 left-6">format_quote</span>
@@ -157,8 +173,8 @@ export default function Page() {
                                 <span className="material-symbols-outlined text-xl">star</span>
                             </div>
                             <div className="text-[#0e161a] dark:text-gray-300 text-sm font-medium leading-relaxed space-y-4 flex-1 mt-2">
-                                <p>&quot;Nos placements étaient éparpillés dans une grande institution bancaire. Nous n&apos;avions pas un suivi adéquat de la représentante. Avec Philippe nous avons discuté de nos besoins, établi un plan d&apos;épargne et réorganisé nos placements.&quot;</p>
-                                <p>&quot;Nous suivons maintenant trimestriellement l&apos;évolution de ce plan et nous effectuons des changements au besoin, afin d&apos;atteindre nos objectifs. Philippe est une personne dévouée, fiable et attentionnée qui sait veiller sur nos intérêts.&quot;</p>
+                                <p>&quot;Nos placements étaient éparpillés dans une grande institution bancaire. Nous n&apos;avions pas un suivi adéquat. Avec Philippe nous avons discuté de nos besoins, établi un plan d&apos;épargne et réorganisé nos placements.&quot;</p>
+                                <p>&quot;Philippe est une personne dévouée, fiable et attentionnée qui sait veiller sur nos intérêts.&quot;</p>
                             </div>
                             <div className="mt-auto pt-6 border-t border-gray-200 dark:border-gray-700">
                                 <p className="text-[#0e161a] dark:text-white font-bold text-sm">Serge Laurin et Nathalie Desautels</p>
@@ -177,11 +193,11 @@ export default function Page() {
                             </div>
                             <div className="text-[#0e161a] dark:text-gray-300 text-sm font-medium leading-relaxed space-y-4 flex-1 mt-2">
                                 <p>&quot;Ma plus grande crainte en tant que travailleur autonome était de me blesser. Ce fût le cas en 2016 avec un arrêt de travail de 8 mois.&quot;</p>
-                                <p>&quot;Heureusement, j&apos;avais rencontré Philippe quelques mois plus tôt. En révisant mes assurances salaire, nous avions constaté que j&apos;étais mal assuré. Grâce à son intervention, j&apos;ai eu l&apos;esprit tranquille durant ma convalescence.&quot;</p>
+                                <p>&quot;Heureusement, j&apos;avais rencontré Philippe quelques mois plus tôt. Grâce à son intervention, j&apos;ai eu l&apos;esprit tranquille durant ma convalescence.&quot;</p>
                             </div>
                             <div className="mt-auto pt-6 border-t border-gray-200 dark:border-gray-700">
                                 <p className="text-[#0e161a] dark:text-white font-bold text-sm">Benoît Racine</p>
-                                <p className="text-[#517994] text-xs mt-1">Massothérapeute et propriétaire, O&apos;Kiné massothérapie</p>
+                                <p className="text-[#517994] text-xs mt-1">Massothérapeute, O&apos;Kiné massothérapie</p>
                             </div>
                         </div>
 
@@ -196,8 +212,8 @@ export default function Page() {
                                 <span className="material-symbols-outlined text-xl">star</span>
                             </div>
                             <div className="text-[#0e161a] dark:text-gray-300 text-sm font-medium leading-relaxed space-y-4 flex-1 mt-2">
-                                <p>&quot;Après nos mauvaises expériences avec les banques, on était plutôt nerveux de confier nos besoins à un planificateur financier. Heureusement, Philippe nous a offert un service tout autre : on ne se sent jamais comme un numéro pour lui. Il prend le temps d&apos;écouter et en aucun moment on ne s&apos;est senti sous pression.&quot;</p>
-                                <p>&quot;Toujours rapide, efficace et courtois, il a été à la hauteur pour répondre à nos questions pointilleuses. Somme toute, il nous a offert une gestion humaine de nos finances, en toute confiance.&quot;</p>
+                                <p>&quot;On ne se sent jamais comme un numéro pour lui. Il prend le temps d&apos;écouter et en aucun moment on ne s&apos;est senti sous pression.&quot;</p>
+                                <p>&quot;Il nous a offert une gestion humaine de nos finances, en toute confiance.&quot;</p>
                             </div>
                             <div className="mt-auto pt-6 border-t border-gray-200 dark:border-gray-700">
                                 <p className="text-[#0e161a] dark:text-white font-bold text-sm">Ronald Mckay et Eve Morrissette</p>
@@ -281,7 +297,7 @@ export default function Page() {
             <section className="py-24 px-6 lg:px-40 bg-white dark:bg-background-dark border-t border-slate-100 dark:border-slate-800">
                 <div className="max-w-[1280px] mx-auto w-full">
                     <div className="text-center mb-16 space-y-4">
-                        <h2 className="text-primary font-bold tracking-widest uppercase text-sm">Transparence et Expertise</h2>
+                        <h2 className="text-primary font-bold tracking-widest uppercase text-sm">Transparence et rigueur</h2>
                         <h3 className="text-[#0e161a] dark:text-white text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight">
                             3 lignes d&apos;affaires. 3 permis. 1 seul conseiller.
                         </h3>
@@ -330,7 +346,7 @@ export default function Page() {
                         {/* Assurances */}
                         <div className="bg-white dark:bg-slate-800 rounded-3xl p-10 shadow-lg border border-slate-100 dark:border-slate-700 flex flex-col relative overflow-hidden group hover:shadow-xl hover:-translate-y-1 transition-all">
                             <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-[100px] -z-10 transition-transform group-hover:scale-150"></div>
-                            <h4 className="text-2xl font-black text-[#0e161a] dark:text-white mb-2">Protections des risques</h4>
+                            <h4 className="text-2xl font-black text-[#0e161a] dark:text-white mb-2">Assurance de personnes</h4>
                             <div className="inline-flex items-center gap-2 bg-slate-100 dark:bg-slate-700/50 text-slate-700 dark:text-slate-200 px-3 py-1.5 rounded-lg text-sm font-semibold mb-6 w-fit">
                                 <span className="material-symbols-outlined text-primary text-[18px]">security</span>
                                 Permis AMF (Assurance)
@@ -348,6 +364,69 @@ export default function Page() {
                 </div>
             </section>
 
+            {/* FAQ SECTION */}
+            <section className="py-24 px-6 lg:px-40 bg-soft-gray dark:bg-background-dark/50 border-t border-slate-100 dark:border-slate-800">
+                <div className="max-w-[1280px] mx-auto w-full">
+                    <div className="text-center mb-16 space-y-4">
+                        <h2 className="text-primary font-bold tracking-widest uppercase text-sm">Foire aux questions</h2>
+                        <h3 className="text-[#0e161a] dark:text-white text-3xl md:text-4xl font-extrabold tracking-tight">
+                            Questions fréquentes
+                        </h3>
+                    </div>
+                    <div className="max-w-3xl mx-auto flex flex-col gap-4">
+                        <details className="group bg-white dark:bg-slate-800 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 overflow-hidden">
+                            <summary className="flex items-center justify-between cursor-pointer p-6 font-bold text-[#0e161a] dark:text-white hover:text-primary transition-colors">
+                                Qu&apos;est-ce qu&apos;un planificateur financier?
+                                <span className="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span>
+                            </summary>
+                            <div className="px-6 pb-6 text-slate-600 dark:text-slate-400 leading-relaxed">
+                                <p>Un planificateur financier est un professionnel certifié par l&apos;IQPF qui analyse l&apos;ensemble de votre situation financière (fiscalité, placements, assurances, retraite, succession) afin de bâtir un plan cohérent et personnalisé pour atteindre vos objectifs.</p>
+                            </div>
+                        </details>
+
+                        <details className="group bg-white dark:bg-slate-800 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 overflow-hidden">
+                            <summary className="flex items-center justify-between cursor-pointer p-6 font-bold text-[#0e161a] dark:text-white hover:text-primary transition-colors">
+                                Combien coûte une consultation?
+                                <span className="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span>
+                            </summary>
+                            <div className="px-6 pb-6 text-slate-600 dark:text-slate-400 leading-relaxed">
+                                <p>La première rencontre exploratoire est sans frais et sans engagement. Par la suite, les honoraires pour un mandat de planification financière sont de 110$/h. Les services d&apos;assurance et d&apos;épargne collective n&apos;engendrent aucun frais direct pour vous.</p>
+                            </div>
+                        </details>
+
+                        <details className="group bg-white dark:bg-slate-800 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 overflow-hidden">
+                            <summary className="flex items-center justify-between cursor-pointer p-6 font-bold text-[#0e161a] dark:text-white hover:text-primary transition-colors">
+                                Quelle est la différence entre un planificateur financier et un conseiller en banque?
+                                <span className="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span>
+                            </summary>
+                            <div className="px-6 pb-6 text-slate-600 dark:text-slate-400 leading-relaxed">
+                                <p>Un planificateur financier indépendant comme Philippe travaille pour vous, pas pour une institution. Il a accès à une large gamme de produits de plusieurs fournisseurs et n&apos;est pas limité aux produits d&apos;une seule banque. Ses conseils sont objectifs et alignés uniquement sur vos intérêts.</p>
+                            </div>
+                        </details>
+
+                        <details className="group bg-white dark:bg-slate-800 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 overflow-hidden">
+                            <summary className="flex items-center justify-between cursor-pointer p-6 font-bold text-[#0e161a] dark:text-white hover:text-primary transition-colors">
+                                Quels types d&apos;assurance de personnes offrez-vous?
+                                <span className="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span>
+                            </summary>
+                            <div className="px-6 pb-6 text-slate-600 dark:text-slate-400 leading-relaxed">
+                                <p>Nous offrons une gamme complète d&apos;assurance de personnes : assurance vie, invalidité, maladies graves, assurance hypothécaire, assurance voyage et assurance entreprise. Nous comparons les offres de plusieurs assureurs pour vous trouver la meilleure protection au meilleur prix.</p>
+                            </div>
+                        </details>
+
+                        <details className="group bg-white dark:bg-slate-800 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 overflow-hidden">
+                            <summary className="flex items-center justify-between cursor-pointer p-6 font-bold text-[#0e161a] dark:text-white hover:text-primary transition-colors">
+                                Comment prendre rendez-vous?
+                                <span className="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span>
+                            </summary>
+                            <div className="px-6 pb-6 text-slate-600 dark:text-slate-400 leading-relaxed">
+                                <p>Vous pouvez réserver une consultation sans frais directement en ligne via notre calendrier Calendly, nous appeler au 450 521-0804, ou remplir le formulaire de contact sur notre site. Philippe vous recontactera rapidement pour planifier votre rencontre.</p>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </section>
+
             {/* FINAL CTA */}
             <section className="py-24 px-6 lg:px-40 bg-white dark:bg-background-dark">
                 <div className="max-w-[1280px] mx-auto w-full text-center">
@@ -361,9 +440,14 @@ export default function Page() {
                                 Prenez rendez-vous aujourd&apos;hui pour une première rencontre exploratoire sans engagement.
                             </p>
                             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 w-full pt-4">
-                                <Link href="/contact" className="w-full sm:w-auto bg-[#1a1a1a] text-white px-10 py-5 rounded-full text-lg font-bold hover:bg-black transition-all shadow-xl group flex items-center justify-center gap-3">
-                                    Prendre un rendez-vous
+                                <a href="https://calendly.com/plhfinance" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto bg-[#1a1a1a] text-white px-10 py-5 rounded-full text-lg font-bold hover:bg-black transition-all shadow-xl group flex items-center justify-center gap-3">
+                                    <span className="material-symbols-outlined">calendar_month</span>
+                                    Réserver en ligne
                                     <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+                                </a>
+                                <Link href="/contact" className="w-full sm:w-auto bg-transparent border-2 border-white/50 text-white px-10 py-5 rounded-full text-lg font-bold hover:bg-white/10 hover:border-white transition-all flex items-center justify-center gap-3">
+                                    <span className="material-symbols-outlined">mail</span>
+                                    Nous contacter
                                 </Link>
                                 <a href="tel:4505210804" className="w-full sm:w-auto bg-transparent border-2 border-white/50 text-white px-10 py-5 rounded-full text-lg font-bold hover:bg-white/10 hover:border-white transition-all flex items-center justify-center">
                                     450 521-0804
