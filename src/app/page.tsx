@@ -449,9 +449,6 @@ export default function Page() {
                                     <span className="material-symbols-outlined">mail</span>
                                     Nous contacter
                                 </Link>
-                                <a href="tel:4505210804" className="w-full sm:w-auto bg-transparent border-2 border-white/50 text-white px-10 py-5 rounded-full text-lg font-bold hover:bg-white/10 hover:border-white transition-all flex items-center justify-center">
-                                    450 521-0804
-                                </a>
                             </div>
                         </div>
                     </div>
