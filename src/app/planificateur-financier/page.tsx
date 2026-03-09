@@ -128,7 +128,7 @@ export default function PlanificateurFinancierPage() {
                     </div>
 
                     {/* Assurances container */}
-                    <div className="bg-[#1a1a1a] dark:bg-[#0e161a] rounded-[40px] text-white p-10 md:p-16 shadow-2xl border border-slate-800 flex flex-col md:flex-row items-center gap-16 relative overflow-hidden">
+                    <div id="assurances" className="bg-[#1a1a1a] dark:bg-[#0e161a] rounded-[40px] text-white p-10 md:p-16 shadow-2xl border border-slate-800 flex flex-col md:flex-row items-center gap-16 relative overflow-hidden scroll-mt-24">
                         <div className="absolute bottom-0 right-0 w-[40%] h-full bg-primary/10 skew-x-12 transform translate-x-1/4 pointer-events-none"></div>
 
                         <div className="w-full md:w-1/2 relative z-10">
@@ -143,7 +143,7 @@ export default function PlanificateurFinancierPage() {
                                 Je compare les solutions offertes par les plus grandes entreprises pour vous protéger, vous et votre famille.
                             </p>
 
-                            <div className="grid grid-cols-2 gap-4">
+                            <div className="grid grid-cols-2 gap-4 mb-8">
                                 <div className="flex items-center gap-3">
                                     <span className="material-symbols-outlined text-primary">done</span>
                                     <span>Vie</span>
@@ -167,6 +167,19 @@ export default function PlanificateurFinancierPage() {
                                 <div className="flex items-center gap-3">
                                     <span className="material-symbols-outlined text-primary">done</span>
                                     <span>Voyage</span>
+                                </div>
+                            </div>
+
+                            <div className="border-t border-white/10 pt-6">
+                                <p className="text-xs uppercase tracking-widest text-gray-400 font-bold mb-3">Nos assureurs partenaires</p>
+                                <div className="flex flex-wrap gap-2">
+                                    <span className="bg-white/10 px-3 py-1.5 rounded-lg text-sm font-medium">Manuvie</span>
+                                    <span className="bg-white/10 px-3 py-1.5 rounded-lg text-sm font-medium">Canada Vie</span>
+                                    <span className="bg-white/10 px-3 py-1.5 rounded-lg text-sm font-medium">iA Groupe financier</span>
+                                    <span className="bg-white/10 px-3 py-1.5 rounded-lg text-sm font-medium">Desjardins</span>
+                                    <span className="bg-white/10 px-3 py-1.5 rounded-lg text-sm font-medium">Sun Life</span>
+                                    <span className="bg-white/10 px-3 py-1.5 rounded-lg text-sm font-medium">Beneva</span>
+                                    <span className="bg-white/10 px-3 py-1.5 rounded-lg text-sm font-medium">RBC Assurances</span>
                                 </div>
                             </div>
                         </div>

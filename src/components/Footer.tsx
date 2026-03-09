@@ -14,7 +14,7 @@ export default function Footer() {
               />
             </div>
           </Link>
-          <p className="text-[#517994] text-sm leading-relaxed">
+          <p className="text-text-muted text-sm leading-relaxed">
             Conseils financiers indépendants pour particuliers et entreprises. Basé au Québec.
           </p>
           <div className="flex gap-4">
@@ -28,7 +28,7 @@ export default function Footer() {
         </div>
         <div>
           <h5 className="text-[#0e161a] dark:text-white font-bold mb-6">Services</h5>
-          <ul className="space-y-4 text-[#517994] text-sm">
+          <ul className="space-y-4 text-text-muted text-sm">
             <li><Link className="hover:text-primary transition-colors" href="/entrepreneur-travailleur-autonome">Entrepreneur</Link></li>
             <li><Link className="hover:text-primary transition-colors" href="/gestion-de-patrimoine">Gestion de patrimoine</Link></li>
             <li><Link className="hover:text-primary transition-colors" href="/parents-travailleurs">Parents travailleurs</Link></li>
@@ -39,7 +39,7 @@ export default function Footer() {
         </div>
         <div>
           <h5 className="text-[#0e161a] dark:text-white font-bold mb-6">Liens Rapides</h5>
-          <ul className="space-y-4 text-[#517994] text-sm">
+          <ul className="space-y-4 text-text-muted text-sm">
             <li><Link className="hover:text-primary transition-colors" href="/planificateur-financier">Notre équipe</Link></li>
             <li><Link className="hover:text-primary transition-colors" href="/blogue">Blogue financier</Link></li>
             <li><Link className="hover:text-primary transition-colors" href="/planificateur-financier">À Propos</Link></li>
@@ -48,7 +48,7 @@ export default function Footer() {
         </div>
         <div>
           <h5 className="text-[#0e161a] dark:text-white font-bold mb-6">Légal</h5>
-          <ul className="space-y-4 text-[#517994] text-sm">
+          <ul className="space-y-4 text-text-muted text-sm">
             <li><a className="hover:text-primary transition-colors" href="/">Mentions légales</a></li>
             <li><a className="hover:text-primary transition-colors" href="/">Politique de protection des renseignements personnels</a></li>
             <li><a className="hover:text-primary transition-colors" href="/">Accessibilité</a></li>
@@ -56,8 +56,8 @@ export default function Footer() {
         </div>
       </div>
       <div className="max-w-[1280px] mx-auto pt-10 mt-20 border-t border-gray-100 dark:border-gray-800 flex flex-col md:flex-row justify-between items-center gap-6">
-        <p className="text-[#517994] text-xs">© 2024 PLH Finance. Tous droits réservés.</p>
-        <div className="flex items-center gap-2 text-xs text-[#517994]">
+        <p className="text-text-muted text-xs">© 2024 PLH Finance. Tous droits réservés.</p>
+        <div className="flex items-center gap-2 text-xs text-text-muted">
           <span className="material-symbols-outlined text-sm">location_on</span>
           <span>Québec, Canada</span>
         </div>

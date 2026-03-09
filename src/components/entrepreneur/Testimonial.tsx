@@ -15,7 +15,7 @@ export default function Testimonial() {
                 <div className="flex flex-col items-center gap-3">
                     <div className="w-16 h-1 bg-primary rounded-full mb-2"></div>
                     <cite className="not-italic text-lg font-bold text-[#0e161a] dark:text-white">Benoît Racine</cite>
-                    <span className="text-sm text-[#517994] dark:text-slate-400 uppercase tracking-widest font-semibold">
+                    <span className="text-sm text-text-muted dark:text-slate-400 uppercase tracking-widest font-semibold">
                         Massothérapeute et propriétaire du centre O'Kiné massothérapie
                     </span>
                 </div>

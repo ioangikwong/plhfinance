@@ -2,7 +2,7 @@ export default function MainContent() {
     return (
         <section className="py-24 bg-white dark:bg-background-dark">
             <div className="max-w-4xl mx-auto px-6 lg:px-40">
-                <div className="prose prose-lg dark:prose-invert prose-p:text-[#517994] dark:prose-p:text-slate-300 prose-headings:text-[#0e161a] dark:prose-headings:text-white max-w-none">
+                <div className="prose prose-lg dark:prose-invert prose-p:text-text-muted dark:prose-p:text-slate-300 prose-headings:text-[#0e161a] dark:prose-headings:text-white max-w-none">
                     <h2 className="text-3xl font-extrabold mb-8 text-primary drop-shadow-sm leading-tight text-balance">
                         Être travailleur autonome requiert une bonne dose d'organisation dans différentes sphères du domaine des affaires.
                     </h2>

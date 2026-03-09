@@ -13,7 +13,7 @@ export default function ValueProps() {
                             <span className="material-symbols-outlined text-3xl">schedule</span>
                         </div>
                         <h4 className="text-xl font-bold mb-3 text-[#0e161a] dark:text-white">Gagner du temps</h4>
-                        <p className="text-[#517994] dark:text-slate-300 leading-relaxed">
+                        <p className="text-text-muted dark:text-slate-300 leading-relaxed">
                             Consacrez moins de temps à vos finances et plus de temps à votre famille, pour vous-même ou votre entreprise.
                         </p>
                     </div>
@@ -23,7 +23,7 @@ export default function ValueProps() {
                             <span className="material-symbols-outlined text-3xl">savings</span>
                         </div>
                         <h4 className="text-xl font-bold mb-3 text-[#0e161a] dark:text-white">Fonds de retraite</h4>
-                        <p className="text-[#517994] dark:text-slate-300 leading-relaxed">
+                        <p className="text-text-muted dark:text-slate-300 leading-relaxed">
                             Constituez un fond solide pour votre retraite afin de garantir votre sécurité financière future.
                         </p>
                     </div>
@@ -33,7 +33,7 @@ export default function ValueProps() {
                             <span className="material-symbols-outlined text-3xl">shield</span>
                         </div>
                         <h4 className="text-xl font-bold mb-3 text-[#0e161a] dark:text-white">Protection globale</h4>
-                        <p className="text-[#517994] dark:text-slate-300 leading-relaxed">
+                        <p className="text-text-muted dark:text-slate-300 leading-relaxed">
                             Protégez l'intégrité de votre entreprise et sécurisez votre patrimoine familial à long terme.
                         </p>
                     </div>
@@ -43,7 +43,7 @@ export default function ValueProps() {
                             <span className="material-symbols-outlined text-3xl">map</span>
                         </div>
                         <h4 className="text-xl font-bold mb-3 text-[#0e161a] dark:text-white">Plan sur-mesure</h4>
-                        <p className="text-[#517994] dark:text-slate-300 leading-relaxed">
+                        <p className="text-text-muted dark:text-slate-300 leading-relaxed">
                             Réalisez un plan d'action personnalisé grâce à notre accès à 16 assureurs et 20 firmes de fonds mutuels.
                         </p>
                     </div>
@@ -53,7 +53,7 @@ export default function ValueProps() {
                             <span className="material-symbols-outlined text-3xl">hub</span>
                         </div>
                         <h4 className="text-xl font-bold mb-3 text-[#0e161a] dark:text-white">Réseau d'experts</h4>
-                        <p className="text-[#517994] dark:text-slate-300 leading-relaxed">
+                        <p className="text-text-muted dark:text-slate-300 leading-relaxed">
                             Assurez-vous d'avoir un pont solide entre les différents professionnels qui vous entourent (comptables, notaires, etc).
                         </p>
                     </div>

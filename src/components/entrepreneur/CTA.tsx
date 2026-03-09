@@ -7,7 +7,7 @@ export default function CTA() {
                 <h2 className="text-4xl md:text-5xl font-black mb-6 text-[#0e161a] dark:text-white tracking-tight text-balance">
                     On fait l'évaluation de votre situation financière gratuitement!*
                 </h2>
-                <p className="text-md text-[#517994] dark:text-slate-400 mb-10 max-w-2xl mx-auto font-light italic">
+                <p className="text-md text-text-muted dark:text-slate-400 mb-10 max-w-2xl mx-auto font-light italic">
                     * Une commission ou des honoraires peuvent être versés par le fournisseur du produit.
                 </p>
                 <div className="flex justify-center">

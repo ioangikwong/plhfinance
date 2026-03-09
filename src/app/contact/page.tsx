@@ -14,7 +14,7 @@ export default function ContactPage() {
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto max-w-2xl text-center">
                         <h1 className="mt-2 text-4xl font-extrabold tracking-tight text-[#0e161a] sm:text-6xl">Contact</h1>
-                        <p className="mt-6 text-lg leading-8 text-[#517994]">
+                        <p className="mt-6 text-lg leading-8 text-text-muted">
                             Vos meilleurs lendemains peuvent commencer dès aujourd&apos;hui!
                         </p>
                     </div>

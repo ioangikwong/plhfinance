@@ -57,7 +57,7 @@ export default function Page() {
                         <h2 className="text-[#0e161a] dark:text-white text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight mb-4">
                             Découvrez notre approche
                         </h2>
-                        <p className="text-[#517994] dark:text-gray-400 text-lg sm:text-xl font-medium">
+                        <p className="text-text-muted dark:text-gray-400 text-lg sm:text-xl font-medium">
                             Parce que votre réalité financière mérite bien plus qu&apos;une feuille de calcul.
                         </p>
                     </div>
@@ -90,7 +90,7 @@ export default function Page() {
                             </div>
                             <div className="p-6 flex flex-col items-center flex-1">
                                 <h4 className="text-[#0e161a] dark:text-white text-lg font-bold mb-3 group-hover:text-primary transition-colors leading-tight">Entrepreneur</h4>
-                                <p className="text-[#517994] dark:text-gray-400 text-sm leading-relaxed mt-auto mb-4">
+                                <p className="text-text-muted dark:text-gray-400 text-sm leading-relaxed mt-auto mb-4">
                                     Stratégie de croissance et optimisation fiscale corporative.
                                 </p>
                                 <span className="material-symbols-outlined text-primary/30 group-hover:text-primary group-hover:translate-x-1 transition-all mt-auto text-xl">arrow_forward</span>
@@ -103,7 +103,7 @@ export default function Page() {
                             </div>
                             <div className="p-6 flex flex-col items-center flex-1">
                                 <h4 className="text-[#0e161a] dark:text-white text-lg font-bold mb-3 group-hover:text-primary transition-colors leading-tight">Gestion de patrimoine</h4>
-                                <p className="text-[#517994] dark:text-gray-400 text-sm leading-relaxed mt-auto mb-4">
+                                <p className="text-text-muted dark:text-gray-400 text-sm leading-relaxed mt-auto mb-4">
                                     Optimisation et croissance rigoureuse de vos actifs.
                                 </p>
                                 <span className="material-symbols-outlined text-primary/30 group-hover:text-primary group-hover:translate-x-1 transition-all mt-auto text-xl">arrow_forward</span>
@@ -116,7 +116,7 @@ export default function Page() {
                             </div>
                             <div className="p-6 flex flex-col items-center flex-1">
                                 <h4 className="text-[#0e161a] dark:text-white text-lg font-bold mb-3 group-hover:text-primary transition-colors leading-tight">Parent travailleur</h4>
-                                <p className="text-[#517994] dark:text-gray-400 text-sm leading-relaxed mt-auto mb-4">
+                                <p className="text-text-muted dark:text-gray-400 text-sm leading-relaxed mt-auto mb-4">
                                     Sécurisation de l&apos;avenir familial et conciliation de carrière.
                                 </p>
                                 <span className="material-symbols-outlined text-primary/30 group-hover:text-primary group-hover:translate-x-1 transition-all mt-auto text-xl">arrow_forward</span>
@@ -129,7 +129,7 @@ export default function Page() {
                             </div>
                             <div className="p-6 flex flex-col items-center flex-1">
                                 <h4 className="text-[#0e161a] dark:text-white text-lg font-bold mb-3 group-hover:text-primary transition-colors leading-tight">Retraite</h4>
-                                <p className="text-[#517994] dark:text-gray-400 text-sm leading-relaxed mt-auto mb-4">
+                                <p className="text-text-muted dark:text-gray-400 text-sm leading-relaxed mt-auto mb-4">
                                     Planification de chaque étape pour une transition sereine.
                                 </p>
                                 <span className="material-symbols-outlined text-primary/30 group-hover:text-primary group-hover:translate-x-1 transition-all mt-auto text-xl">arrow_forward</span>
@@ -142,7 +142,7 @@ export default function Page() {
                             </div>
                             <div className="p-6 flex flex-col items-center flex-1">
                                 <h4 className="text-[#0e161a] dark:text-white text-lg font-bold mb-3 group-hover:text-primary transition-colors leading-tight">Proche aidant</h4>
-                                <p className="text-[#517994] dark:text-gray-400 text-sm leading-relaxed mt-auto mb-4">
+                                <p className="text-text-muted dark:text-gray-400 text-sm leading-relaxed mt-auto mb-4">
                                     Accompagnement et conseils financiers stratégiques.
                                 </p>
                                 <span className="material-symbols-outlined text-primary/30 group-hover:text-primary group-hover:translate-x-1 transition-all mt-auto text-xl">arrow_forward</span>
@@ -197,7 +197,7 @@ export default function Page() {
                             </div>
                             <div className="mt-auto pt-6 border-t border-gray-200 dark:border-gray-700">
                                 <p className="text-[#0e161a] dark:text-white font-bold text-sm">Benoît Racine</p>
-                                <p className="text-[#517994] text-xs mt-1">Massothérapeute, O&apos;Kiné massothérapie</p>
+                                <p className="text-text-muted text-xs mt-1">Massothérapeute, O&apos;Kiné massothérapie</p>
                             </div>
                         </div>
 
@@ -364,7 +364,7 @@ export default function Page() {
                         <h3 className="text-[#0e161a] dark:text-white text-3xl md:text-4xl font-extrabold tracking-tight">
                             Une transition financière réussie
                         </h3>
-                        <p className="text-[#517994] dark:text-gray-400 text-lg font-medium max-w-2xl mx-auto">
+                        <p className="text-text-muted dark:text-gray-400 text-lg font-medium max-w-2xl mx-auto">
                             Pour qu&apos;un plan se transforme réellement en résultats, quatre éléments doivent être présents.
                         </p>
                     </div>
@@ -398,7 +398,7 @@ export default function Page() {
                             <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">Des actions concrètes pour exécuter le plan</p>
                         </div>
                     </div>
-                    <p className="text-center text-[#517994] dark:text-gray-400 text-base mt-12 max-w-2xl mx-auto italic">
+                    <p className="text-center text-text-muted dark:text-gray-400 text-base mt-12 max-w-2xl mx-auto italic">
                         Sans l&apos;un de ces éléments, votre transition reste incomplète. Mon rôle est de vous aider à réunir ces quatre conditions.
                     </p>
                 </div>
@@ -412,7 +412,7 @@ export default function Page() {
                         <h3 className="text-[#0e161a] dark:text-white text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight">
                             3 lignes d&apos;affaires. 3 permis. 1 seul conseiller.
                         </h3>
-                        <p className="text-[#517994] dark:text-gray-400 text-lg sm:text-xl font-medium max-w-3xl mx-auto">
+                        <p className="text-text-muted dark:text-gray-400 text-lg sm:text-xl font-medium max-w-3xl mx-auto">
                             Bénéficiez d&apos;une approche intégrée grâce à mes 2 baccalauréats et mes 3 permis de pratique AMF/IQPF. Une structure de rémunération claire pour des décisions 100% alignées sur vos objectifs.
                         </p>
                     </div>
@@ -430,7 +430,7 @@ export default function Page() {
                                 On clarifie votre situation, vos projets professionnels et de retraite. Bilan financier exhaustif (via Equisoft) sans frais initiaux cachés. Plan concret, humain et accompagné.
                             </p>
                             <div className="border-t border-slate-100 dark:border-slate-700 pt-6 mt-auto">
-                                <p className="text-xs uppercase tracking-widest text-[#517994] font-bold mb-2">Tarification claire</p>
+                                <p className="text-xs uppercase tracking-widest text-text-muted font-bold mb-2">Tarification claire</p>
                                 <p className="text-xl font-black text-[#0e161a] dark:text-white">Honoraires : 110$/h</p>
                                 <p className="text-sm text-slate-500 font-medium mt-1">Pour un mandat complet ou partiel</p>
                             </div>
@@ -448,7 +448,7 @@ export default function Page() {
                                 Recherche de performance (Alpha) et contrôle du risque avec rigueur. Je vous démontre la valeur générée nette des frais de gestion. Accès aux plus gros gestionnaires au monde.
                             </p>
                             <div className="border-t border-slate-100 dark:border-slate-700 pt-6 mt-auto">
-                                <p className="text-xs uppercase tracking-widest text-[#517994] font-bold mb-2">Tarification claire</p>
+                                <p className="text-xs uppercase tracking-widest text-text-muted font-bold mb-2">Tarification claire</p>
                                 <p className="text-xl font-black text-[#0e161a] dark:text-white">Frais de gestion annuels</p>
                                 <p className="text-sm text-slate-500 font-medium mt-1">Inclus et versés directement par vos fournisseurs de fonds</p>
                             </div>
@@ -466,7 +466,7 @@ export default function Page() {
                                 Anticipez l&apos;impact de tous les imprévus (invalidité, maladie grave, décès). Bâtissez des stratégies stables et non impulsives pour protéger solidement votre famille.
                             </p>
                             <div className="border-t border-slate-100 dark:border-slate-700 pt-6 mt-auto">
-                                <p className="text-xs uppercase tracking-widest text-[#517994] font-bold mb-2">Tarification claire</p>
+                                <p className="text-xs uppercase tracking-widest text-text-muted font-bold mb-2">Tarification claire</p>
                                 <p className="text-xl font-black text-[#0e161a] dark:text-white">0$ de frais directs</p>
                                 <p className="text-sm text-slate-500 font-medium mt-1">Rémunération par commission versée par l&apos;assureur choisi</p>
                             </div>

@@ -88,6 +88,7 @@ export default function Header() {
             </div>
 
             <Link className="flex items-center text-[#0e161a] dark:text-white text-sm font-semibold hover:text-primary transition-colors py-2" href="/planificateur-financier">Planificateur Financier</Link>
+            <Link className="flex items-center text-primary text-sm font-bold hover:text-primary/80 transition-colors py-2" href="/planificateur-financier#assurances">Assurance de personnes</Link>
             <Link className="flex items-center text-[#0e161a] dark:text-white text-sm font-semibold hover:text-primary transition-colors py-2" href="/blogue">Blogue</Link>
           </div>
           <div className="flex items-center gap-4">
@@ -171,7 +172,7 @@ export default function Header() {
           <div className={`absolute top-0 left-0 w-full flex flex-col gap-10 transition-transform duration-300 ${isServicesMenuOpen ? 'translate-x-0 opacity-100' : 'translate-x-[120%] opacity-0 pointer-events-none'}`}>
             <button
               onClick={() => setIsServicesMenuOpen(false)}
-              className="text-[#517994] dark:text-gray-400 flex items-center justify-center gap-2 text-sm font-bold uppercase tracking-widest group"
+              className="text-text-muted dark:text-gray-400 flex items-center justify-center gap-2 text-sm font-bold uppercase tracking-widest group"
             >
               <span className="material-symbols-outlined text-[20px] transition-transform group-hover:-translate-x-1">arrow_back</span>
               Retour
