@@ -9,7 +9,7 @@ export default function Hero() {
 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
 <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
 </span>
-                            Expertise Dédiée
+                            Accompagnement Dédié
                         </div>
 <h1 className="text-5xl lg:text-7xl font-black text-slate-900 leading-[1.1] tracking-tight">
                             Parents <span className="text-primary">travailleurs</span>

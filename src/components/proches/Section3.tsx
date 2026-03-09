@@ -22,7 +22,7 @@ export default function Section3() {
 </div>
 <h3 className="text-2xl font-bold mb-4">Orientation administrative</h3>
 <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
-                            Une expertise pointue pour structurer les aspects légaux et financiers de votre rôle d'aidant. De la fiscalité aux mandats légaux, nous gérons la complexité pour vous.
+                            Un savoir-faire pointu pour structurer les aspects légaux et financiers de votre rôle d'aidant. De la fiscalité aux mandats légaux, nous gérons la complexité pour vous.
                         </p>
 </div>
 </div>

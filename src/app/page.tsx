@@ -41,7 +41,7 @@ export default function Page() {
                             <Link href="/contact" className="flex min-w-[220px] cursor-pointer items-center justify-center rounded-xl h-14 px-8 bg-primary text-white text-lg font-bold shadow-lg shadow-primary/30 hover:bg-primary/90 hover:scale-105 transition-all duration-300">
                                 Consultation sans frais
                             </Link>
-                            <Link href="#expertises" className="flex min-w-[220px] cursor-pointer items-center justify-center rounded-xl h-14 px-8 border-2 border-white/30 backdrop-blur-sm bg-white/5 text-white text-lg font-bold hover:bg-white/10 hover:border-white/50 transition-all duration-300">
+                            <Link href="#services" className="flex min-w-[220px] cursor-pointer items-center justify-center rounded-xl h-14 px-8 border-2 border-white/30 backdrop-blur-sm bg-white/5 text-white text-lg font-bold hover:bg-white/10 hover:border-white/50 transition-all duration-300">
                                 Nos services
                             </Link>
                         </div>
@@ -76,7 +76,7 @@ export default function Page() {
                 </div>
             </section>
 
-            <section id="expertises" className="bg-white dark:bg-background-dark py-24 px-6 lg:px-40 scroll-mt-24 z-10 relative">
+            <section id="services" className="bg-white dark:bg-background-dark py-24 px-6 lg:px-40 scroll-mt-24 z-10 relative">
                 <div className="max-w-[1280px] mx-auto w-full">
                     <div className="text-center mb-16 space-y-4">
                         <h2 className="text-primary font-bold tracking-widest uppercase text-sm">Clientèle cible</h2>
@@ -223,15 +223,15 @@ export default function Page() {
                 </div>
             </section>
 
-            {/* Bio Section */}
-            <section className="bg-white dark:bg-background-dark py-24 px-6 lg:px-40 relative">
+            {/* Bio Section — DARK for depth/contrast (meeting 3 mars) */}
+            <section className="bg-[#0e161a] py-24 px-6 lg:px-40 relative">
                 <div className="max-w-[1280px] mx-auto w-full">
-                    <div className="bg-slate-50 dark:bg-slate-800/30 rounded-[40px] p-10 md:p-16 lg:p-20 shadow-xl border border-slate-100 dark:border-slate-800 flex flex-col items-center">
+                    <div className="bg-[#1a2730] rounded-[40px] p-10 md:p-16 lg:p-20 shadow-xl border border-white/10 flex flex-col items-center">
                         <div className="max-w-[1024px] mx-auto w-full flex flex-col md:flex-row gap-12 lg:gap-16 items-center">
 
                             {/* Photo */}
                             <div className="w-full md:w-1/3 shrink-0 flex justify-center">
-                                <div className="aspect-square w-full max-w-[320px] relative rounded-2xl overflow-hidden shadow-2xl border-4 border-gray-50 dark:border-gray-800 bg-white dark:bg-slate-800">
+                                <div className="aspect-square w-full max-w-[320px] relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white/10 bg-[#0e161a]">
                                     <img
                                         src="/philippe.jpg"
                                         alt="Philippe Leblanc-Hamel"
@@ -243,7 +243,7 @@ export default function Page() {
                             {/* Content */}
                             <div className="w-full md:w-2/3 flex flex-col gap-6">
                                 <div>
-                                    <h2 className="text-[#0e161a] dark:text-white text-3xl md:text-4xl lg:text-5xl font-black mb-2 tracking-tight">
+                                    <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-black mb-2 tracking-tight">
                                         Philippe Leblanc-Hamel
                                     </h2>
                                     <p className="text-primary font-bold text-lg uppercase tracking-wider">
@@ -251,7 +251,7 @@ export default function Page() {
                                     </p>
                                 </div>
 
-                                <div className="text-[#517994] dark:text-gray-400 space-y-4 text-base md:text-lg leading-relaxed">
+                                <div className="text-gray-300 space-y-4 text-base md:text-lg leading-relaxed">
                                     <p>
                                         Depuis 1995, j&apos;ai eu l&apos;occasion d&apos;œuvrer au sein de plusieurs institutions financières, dans le domaine bancaire et celui des assurances.
                                     </p>
@@ -265,22 +265,22 @@ export default function Page() {
 
                                 {/* Social Links */}
                                 <div className="flex gap-4 pt-2">
-                                    <Link href="https://www.facebook.com/plhfinance/" target="_blank" rel="noopener noreferrer" className="text-[#517994] dark:text-gray-400 hover:text-primary dark:hover:text-primary hover:-translate-y-1 transition-all">
+                                    <Link href="https://www.facebook.com/plhfinance/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary hover:-translate-y-1 transition-all">
                                         <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fillRule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clipRule="evenodd" /></svg>
                                     </Link>
-                                    <Link href="https://www.linkedin.com/in/philippe-leblanc-hamel-51aa6147/" target="_blank" rel="noopener noreferrer" className="text-[#517994] dark:text-gray-400 hover:text-primary dark:hover:text-primary hover:-translate-y-1 transition-all">
+                                    <Link href="https://www.linkedin.com/in/philippe-leblanc-hamel-51aa6147/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary hover:-translate-y-1 transition-all">
                                         <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fillRule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clipRule="evenodd" /></svg>
                                     </Link>
                                 </div>
 
-                                {/* Extra details mentioned in PPT */}
-                                <div className="pt-6 border-t border-gray-100 dark:border-gray-800 mt-4">
+                                {/* Badges */}
+                                <div className="pt-6 border-t border-white/10 mt-4">
                                     <div className="flex flex-wrap gap-4">
-                                        <div className="bg-slate-100 dark:bg-slate-700/50 px-4 py-2 rounded-lg text-sm font-bold text-slate-700 dark:text-slate-200 flex items-center gap-2">
+                                        <div className="bg-white/10 px-4 py-2 rounded-lg text-sm font-bold text-white flex items-center gap-2">
                                             <span className="material-symbols-outlined text-primary">school</span>
                                             2 Baccalauréats
                                         </div>
-                                        <div className="bg-slate-100 dark:bg-slate-700/50 px-4 py-2 rounded-lg text-sm font-bold text-slate-700 dark:text-slate-200 flex items-center gap-2">
+                                        <div className="bg-white/10 px-4 py-2 rounded-lg text-sm font-bold text-white flex items-center gap-2">
                                             <span className="material-symbols-outlined text-primary">badge</span>
                                             3 Permis certifiés
                                         </div>
@@ -290,6 +290,117 @@ export default function Page() {
                             </div>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            {/* POURQUOI ME CHOISIR */}
+            <section className="py-24 px-6 lg:px-40 bg-white dark:bg-background-dark">
+                <div className="max-w-[1280px] mx-auto w-full">
+                    <div className="text-center mb-16 space-y-4">
+                        <h2 className="text-primary font-bold tracking-widest uppercase text-sm">Votre conseiller</h2>
+                        <h3 className="text-[#0e161a] dark:text-white text-3xl md:text-4xl font-extrabold tracking-tight">
+                            Pourquoi me choisir
+                        </h3>
+                    </div>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+                        <div className="flex items-start gap-4 p-6 bg-soft-gray dark:bg-slate-800/50 rounded-2xl border border-gray-100 dark:border-gray-700">
+                            <span className="material-symbols-outlined text-primary text-2xl shrink-0 mt-0.5">verified_user</span>
+                            <div>
+                                <p className="font-bold text-[#0e161a] dark:text-white text-sm">Indépendant</p>
+                                <p className="text-slate-500 dark:text-slate-400 text-sm mt-1">Aucune pression, aucune institution imposée</p>
+                            </div>
+                        </div>
+                        <div className="flex items-start gap-4 p-6 bg-soft-gray dark:bg-slate-800/50 rounded-2xl border border-gray-100 dark:border-gray-700">
+                            <span className="material-symbols-outlined text-primary text-2xl shrink-0 mt-0.5">account_balance</span>
+                            <div>
+                                <p className="font-bold text-[#0e161a] dark:text-white text-sm">Choix libre</p>
+                                <p className="text-slate-500 dark:text-slate-400 text-sm mt-1">Accès aux banques, caisses et assureurs</p>
+                            </div>
+                        </div>
+                        <div className="flex items-start gap-4 p-6 bg-soft-gray dark:bg-slate-800/50 rounded-2xl border border-gray-100 dark:border-gray-700">
+                            <span className="material-symbols-outlined text-primary text-2xl shrink-0 mt-0.5">school</span>
+                            <div>
+                                <p className="font-bold text-[#0e161a] dark:text-white text-sm">Formation solide</p>
+                                <p className="text-slate-500 dark:text-slate-400 text-sm mt-1">2 baccalauréats + 3 permis financiers</p>
+                            </div>
+                        </div>
+                        <div className="flex items-start gap-4 p-6 bg-soft-gray dark:bg-slate-800/50 rounded-2xl border border-gray-100 dark:border-gray-700">
+                            <span className="material-symbols-outlined text-primary text-2xl shrink-0 mt-0.5">favorite</span>
+                            <div>
+                                <p className="font-bold text-[#0e161a] dark:text-white text-sm">Approche humaine</p>
+                                <p className="text-slate-500 dark:text-slate-400 text-sm mt-1">Ancrée dans la réalité, pas dans les chiffres</p>
+                            </div>
+                        </div>
+                        <div className="flex items-start gap-4 p-6 bg-soft-gray dark:bg-slate-800/50 rounded-2xl border border-gray-100 dark:border-gray-700">
+                            <span className="material-symbols-outlined text-primary text-2xl shrink-0 mt-0.5">lock</span>
+                            <div>
+                                <p className="font-bold text-[#0e161a] dark:text-white text-sm">Plateforme sécurisée</p>
+                                <p className="text-slate-500 dark:text-slate-400 text-sm mt-1">Equisoft pour la gestion de vos données</p>
+                            </div>
+                        </div>
+                        <div className="flex items-start gap-4 p-6 bg-soft-gray dark:bg-slate-800/50 rounded-2xl border border-gray-100 dark:border-gray-700">
+                            <span className="material-symbols-outlined text-primary text-2xl shrink-0 mt-0.5">handshake</span>
+                            <div>
+                                <p className="font-bold text-[#0e161a] dark:text-white text-sm">Un vrai conseiller</p>
+                                <p className="text-slate-500 dark:text-slate-400 text-sm mt-1">Pas un vendeur — vos intérêts d&apos;abord</p>
+                            </div>
+                        </div>
+                        <div className="flex items-start gap-4 p-6 bg-soft-gray dark:bg-slate-800/50 rounded-2xl border border-gray-100 dark:border-gray-700 sm:col-span-2">
+                            <span className="material-symbols-outlined text-primary text-2xl shrink-0 mt-0.5">hearing</span>
+                            <div>
+                                <p className="font-bold text-[#0e161a] dark:text-white text-sm">Écoute authentique</p>
+                                <p className="text-slate-500 dark:text-slate-400 text-sm mt-1">Une démarche structurée et personnalisée à votre réalité</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* 4 INGRÉDIENTS D'UNE TRANSITION FINANCIÈRE RÉUSSIE */}
+            <section className="py-24 px-6 lg:px-40 bg-soft-gray dark:bg-background-dark/50 border-t border-slate-100 dark:border-slate-800">
+                <div className="max-w-[1280px] mx-auto w-full">
+                    <div className="text-center mb-16 space-y-4">
+                        <h2 className="text-primary font-bold tracking-widest uppercase text-sm">Notre approche</h2>
+                        <h3 className="text-[#0e161a] dark:text-white text-3xl md:text-4xl font-extrabold tracking-tight">
+                            Une transition financière réussie
+                        </h3>
+                        <p className="text-[#517994] dark:text-gray-400 text-lg font-medium max-w-2xl mx-auto">
+                            Pour qu&apos;un plan se transforme réellement en résultats, quatre éléments doivent être présents.
+                        </p>
+                    </div>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
+                        <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-sm border border-slate-100 dark:border-slate-700 text-center hover:shadow-lg hover:-translate-y-1 transition-all">
+                            <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                                <span className="material-symbols-outlined text-3xl text-primary">favorite</span>
+                            </div>
+                            <h4 className="text-lg font-bold text-[#0e161a] dark:text-white mb-2">Motivation</h4>
+                            <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">Le désir réel de s&apos;améliorer</p>
+                        </div>
+                        <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-sm border border-slate-100 dark:border-slate-700 text-center hover:shadow-lg hover:-translate-y-1 transition-all">
+                            <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                                <span className="material-symbols-outlined text-3xl text-primary">visibility</span>
+                            </div>
+                            <h4 className="text-lg font-bold text-[#0e161a] dark:text-white mb-2">Vision</h4>
+                            <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">Une direction claire, avec des objectifs précis</p>
+                        </div>
+                        <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-sm border border-slate-100 dark:border-slate-700 text-center hover:shadow-lg hover:-translate-y-1 transition-all">
+                            <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                                <span className="material-symbols-outlined text-3xl text-primary">school</span>
+                            </div>
+                            <h4 className="text-lg font-bold text-[#0e161a] dark:text-white mb-2">Connaissances</h4>
+                            <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">Les connaissances nécessaires pour éviter les erreurs</p>
+                        </div>
+                        <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-sm border border-slate-100 dark:border-slate-700 text-center hover:shadow-lg hover:-translate-y-1 transition-all">
+                            <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                                <span className="material-symbols-outlined text-3xl text-primary">rocket_launch</span>
+                            </div>
+                            <h4 className="text-lg font-bold text-[#0e161a] dark:text-white mb-2">Mise en place</h4>
+                            <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">Des actions concrètes pour exécuter le plan</p>
+                        </div>
+                    </div>
+                    <p className="text-center text-[#517994] dark:text-gray-400 text-base mt-12 max-w-2xl mx-auto italic">
+                        Sans l&apos;un de ces éléments, votre transition reste incomplète. Mon rôle est de vous aider à réunir ces quatre conditions.
+                    </p>
                 </div>
             </section>
 
@@ -420,7 +531,7 @@ export default function Page() {
                                 <span className="material-symbols-outlined text-primary transition-transform group-open:rotate-180">expand_more</span>
                             </summary>
                             <div className="px-6 pb-6 text-slate-600 dark:text-slate-400 leading-relaxed">
-                                <p>Vous pouvez réserver une consultation sans frais directement en ligne via notre calendrier Calendly, nous appeler au 450 521-0804, ou remplir le formulaire de contact sur notre site. Philippe vous recontactera rapidement pour planifier votre rencontre.</p>
+                                <p>Vous pouvez réserver une consultation sans frais directement en ligne via notre calendrier en ligne, nous appeler au 450 521-0804, ou remplir le formulaire de contact sur notre site. Philippe vous recontactera rapidement pour planifier votre rencontre.</p>
                             </div>
                         </details>
                     </div>
@@ -440,11 +551,11 @@ export default function Page() {
                                 Prenez rendez-vous aujourd&apos;hui pour une première rencontre exploratoire sans engagement.
                             </p>
                             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 w-full pt-4">
-                                <a href="https://calendly.com/plhfinance" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto bg-[#1a1a1a] text-white px-10 py-5 rounded-full text-lg font-bold hover:bg-black transition-all shadow-xl group flex items-center justify-center gap-3">
+                                <Link href="/contact" className="w-full sm:w-auto bg-[#1a1a1a] text-white px-10 py-5 rounded-full text-lg font-bold hover:bg-black transition-all shadow-xl group flex items-center justify-center gap-3">
                                     <span className="material-symbols-outlined">calendar_month</span>
-                                    Réserver en ligne
+                                    Prendre rendez-vous
                                     <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
-                                </a>
+                                </Link>
                                 <Link href="/contact" className="w-full sm:w-auto bg-transparent border-2 border-white/50 text-white px-10 py-5 rounded-full text-lg font-bold hover:bg-white/10 hover:border-white transition-all flex items-center justify-center gap-3">
                                     <span className="material-symbols-outlined">mail</span>
                                     Nous contacter

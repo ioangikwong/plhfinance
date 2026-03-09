@@ -2,7 +2,7 @@ export default function Section3() {
   return (
     <section className="py-24 bg-background-alt dark:bg-slate-900/50">
 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center mb-16">
-<span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-bold uppercase tracking-wider mb-4">Expertise</span>
+<span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-bold uppercase tracking-wider mb-4">Savoir-faire</span>
 <h2 className="text-4xl font-extrabold text-text-main dark:text-white">Nos champs d'intervention</h2>
 </div>
 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

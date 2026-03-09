@@ -37,7 +37,7 @@ export default function Section3() {
 <span className="material-symbols-outlined text-3xl">shield</span>
 </div>
 <h3 className="text-xl font-bold mb-3">Gestion simplifiée</h3>
-<p className="text-slate-500 dark:text-slate-400 leading-relaxed">Bénéficiez de l'expertise des solutions financières PHL pour une tranquillité d'esprit totale.</p>
+<p className="text-slate-500 dark:text-slate-400 leading-relaxed">Bénéficiez de le savoir-faire des solutions financières PHL pour une tranquillité d'esprit totale.</p>
 </div>
 </div>
 </div>
